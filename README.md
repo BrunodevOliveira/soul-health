@@ -1,27 +1,114 @@
-# ChatDialogFlow3
+## Projeto final
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.4.
+Cada grupo fara seu próprio projeto.
+Nome do site ou empresa representada no projeto, fica a critério de cada grupo.
+Deadline: 18/03/2022
 
-## Development server
+### Descrição geral
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Site feito em Angular com área de informações institucionais, CRUD de cadastro e validação o, login e chat. Seguindo o conceito de mobile first, sendo responsivo. 
 
-## Code scaffolding
+Não será necessário implementar questões de segurança, apenas validação de campos.
+A troca de página será utilizando lazy loading do Angular.
+Login será condição para poder acessar a área de chat de suporte técnico que utilizará o DialogFlow.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Arquitetura
 
-## Build
+Frontend:
+•	Páginas Institucionais, 
+•	Formulário de cadastro de usuário com validação de campos (registro do cadastro deverá ser um objeto), 
+•	Login,
+•	e chat.
+•	* Definição requisitos sobre o que necessariamente deverá ser componente, à definir.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Backend:
+	•	CRUD de cadastros de usuários utilizando classes,
+	•	Login (sem necessidade de se preocupar com questões de segurança),
+	•	conexão com banco de dados MySQL,
+	•	Chat com integração com DialogFlow.
 
-## Running unit tests
+### Guia para utilização de recursos aprendidos nos módulos
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+HTML
+•	Estrutura de página
+•	Inserção de imagens
+•	Links e ancoras
+•	Listas - Ordenadas e não ordenadas
+•	Elementos HTML 5
+•	Estrutura e Semântica
+•	Tabelas
+•	Formulários
 
-## Running end-to-end tests
+CSS
+•	CSS Inline;
+•	Formatação de texto, fontes e alinhamentos personalizados:
+•	Cores hexadecimal, rgb e nomes
+•	Margins e paddings Bordas e Shadow
+•	Cores Gradientes
+•	Page Layout Elementos Float e Clear
+•	Layout fixo e adaptavel
+Flexbox Grid
+•	Design responsivo
+•	Menus - Horizontal vertical e drop down
+•	Media Queries
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Javascript
+•	Variáveis
+•	Operadores matemáticos
+•	Operadores de incremento e decremento
+•	Operadores de comparação
+•	Operadores Lógicos
+•	Tabela verdade
+•	if/else
+•	Loops
+•	Funções e params
+•	Funções anônimas e Arrow Functions
+•	Eventos e DOM
+•	Arrays
+•	Tipos de dados: números, strings, date e objects
 
-## Further help
+BOOTSTRAP
+•	Frameworks
+•	Grid
+•	Containers (bootstrap)
+•	Classes CSS Bootstrap
+•	Botão, Video, Imagem, Texto e Tabela
+•	Formularios
+•	Menu & Navegação 
+•	Carrossel
+•	Media queries
+- Jquery
+•	Seletores
+•	Manipulação do DOM
+•	Scrolling Eventos
+•	Animações e Efeitos Jquery UI
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+NODE JS
+•	Servidor Web
+•	Programação Server
+•	Side
+•	Node com NPM
+•	Framework express express
+•	Mongo DB Atlas ou MySQL
+•	Mongoose ou alternativa para MySQL
+•	Rotas e controllers
+•	CRUD
+•	MVC
+
+ANGULAR 12
+•	Type script
+•	Angular CLI
+•	Components
+•	Data binding
+•	Diretivas
+•	Comunicação e ciclo de vida entre componentes
+•	RXJS Observables e
+•	Subjects
+•	- RXJS Operadores
+•	Requisicces HTTP
+•	Formulários
+•	Roteamento
+Agilidade
+•	GitHub
+Google Cloud
+•	DialogFlow
