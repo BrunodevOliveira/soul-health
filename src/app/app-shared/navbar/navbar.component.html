@@ -1,60 +1,102 @@
-<!-- Navbar -->
-<header class="header">
-  <nav class="header-navbar">
-    <ul class="nav nav-pills nav-fill">
-      <li class="nav-item">
-        <a class="nav-link" href="#">Much longer nav link</a>
+
+<div class="header-navbar">
+  <div class="header-social-media">
+    <ul>
+      <li>
+        <a href="#">
+          <i class="fab fa-facebook-f"></i>
+        </a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+      <li>
+        <a href="#">
+          <i class="fab fa-twitter"></i>
+        </a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      <li>
+        <a href="#">
+          <i class="fab fa-instagram"></i>
+        </a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#">Active</a>
+      <li>
+        <a href="#">
+          <i class="fab fa-youtube"></i>
+        </a>
       </li>
     </ul>
-    <div class="header-social-media">
-      <ul>
-        <li>
-          <a href="#">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="fab fa-twitter"></i>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="fab fa-instagram"></i>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="fab fa-youtube"></i>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+  </div>
+  <!--<div class="listCenter d-none d-sm-none d-md-block d-md-none d-lg-block">-->
+  <div class="listCenter ">
+    <ul class="nav nav-pills nav-fill" >
+      <li class="nav-item">
+        <a class="nav-link" href="#"><b>Ligue agora: </b>21 99999-9999</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><b>E-mail: </b>contato@soulhealth.com.br</a>
+      </li>
+    </ul>
+  </div>
 
-  <nav class="navbar navbar-light bg-primary">
+  <div class="listRight">
+    <ul class="nav nav-pills nav-fill" >
+      <li class="nav-item">
+        <button type="button" class="btn btn-success" id="login"><i class="bi bi-person-fill"></i> Login</button>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid">
-      <div>
-        <a class="navbar-brand">Navbar</a>
-        <a class="navbar-brand">Navbar</a>
-        <a class="navbar-brand">Navbar</a>
-        <a class="navbar-brand">Navbar</a>
-        <a class="navbar-brand">Navbar</a>
-        <a class="navbar-brand">Navbar</a>
+      <div class="fancy-border">
+        <a href="">
+          <img src="../../../assets/logo-dark.png" width="100" alt="Logo" class="logo">
+        </a>
+      </div><!--Imagem dentro da forma geométrica-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+            <li class="nav-item ">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Departamentos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contatos</a>
+            </li>
+          </ul>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-center d-flex align-items-center me-5">
+              <li class="nav-item">
+                <a href="#">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-light" type="submit">Search</button>
-      </form>
     </div>
   </nav>
 </header>
+
+
+
+
+
+
+
