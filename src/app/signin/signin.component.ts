@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SigninComponent implements OnInit {
 
+  user:any =  {
+    email:'',
+    password:'',
+    token:''
+  }
   constructor() { }
 
   ngOnInit(): void {

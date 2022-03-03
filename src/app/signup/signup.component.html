@@ -47,7 +47,6 @@
             <div class="input-group input-group-lg">
               <span class="input-group-text" id="inputGroup-sizing-lg">
                 <i class="bi bi-envelope-fill"></i>
-
               </span>
               <input
                 type="email"
@@ -88,6 +87,7 @@
                 minlength="4"
               />
             </div>
+
             <div *ngIf="!password.valid && password.touched" class="error">
               <i class="bi bi-exclamation-triangle"></i> Sua senha deve ter no mínimo 4 caracteres
             </div>

@@ -8,6 +8,7 @@ import { PaginaUsuarioComponent } from './app-beneficiario/pagina-usuario/pagina
 import { SignupComponent } from './signup/signup.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { SigninComponent } from 'src/app/signin/signin.component';
 
 
 
@@ -17,6 +18,7 @@ import { HttpClientModule } from '@angular/common/http';
     PaginaUsuarioComponent,
     PaginaUsuarioComponent,
     SignupComponent,
+    SigninComponent
 
   ],
   imports: [
