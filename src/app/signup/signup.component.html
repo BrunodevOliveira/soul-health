@@ -14,7 +14,7 @@
 
     <div class="col-md col-lg-5  align-self-center my-3">
 
-      <form #f="ngForm"(ngSubmit)="onSubmit(f)">
+      <form #f="ngForm" class="needs-validation" novalidade (submit)="onSubmit()">
         <h5 class="text-center">Preencha os campos para criar sua conta </h5>
 
         <hr style="width: 50%; margin: 15px auto;">
@@ -43,7 +43,7 @@
         </div> -->
 
         <div class="mt-2">
-            <label for="email">Email</label>
+            <label for="email" class="form-label">Email</label>
             <div class="input-group input-group-lg">
               <span class="input-group-text" id="inputGroup-sizing-lg">
                 <i class="bi bi-envelope-fill"></i>
@@ -59,7 +59,8 @@
                 placeholder="Email"
                 name="email"
                 required
-                ngModel [email]="true"
+                [email]="true"
+                [(ngModel)]="user.email"
 
               />
             </div>
@@ -69,7 +70,7 @@
         </div>
 
         <div class="mt-2">
-            <label for="password">Senha</label>
+            <label for="password" class="form-label">Senha</label>
             <div class="input-group input-group-lg">
               <span class="input-group-text" id="inputGroup-sizing-lg">
                   <i class="bi bi-lock-fill"></i>
@@ -83,7 +84,7 @@
                 name="password"
                 #password="ngModel"
                 required
-                ngModel
+                [(ngModel)]="user.password"
                 minlength="4"
               />
             </div>
@@ -93,7 +94,7 @@
         </div>
 
         <div class="d-grid gap-2 col-6 mx-auto mt-4">
-          <button type="submit" class="btn btn-primary" [disabled]="f.invalid">Cadastrar</button>
+          <button type="submit" class="btn btn-primary" [disabled]="f.invalid" >Cadastrar</button>
         </div>
         <p class="text-center text-muted mt-3">Ou entre com:</p>
 
@@ -131,7 +132,6 @@
     </div>
 
   </div>
-
 </main>
 
 
