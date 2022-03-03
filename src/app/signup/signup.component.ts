@@ -1,4 +1,7 @@
+import { SignupService } from './../service/signup.service';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { Signup } from '../modelInterface/signup';
 
 @Component({
   selector: 'app-signup',
@@ -7,23 +10,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignupComponent implements OnInit {
 
-  constructor() { }
-
-  user:any = {
-    name: null,
-    email: null
-
+  constructor(private signupService: SignupService, private router: Router) { }
+  user:Signup =  {
+    email:'',
+    password:'',
+    token:''
   }
 
-  onSubmit(form:any){
-    console.log(form.value)
-
-    // this.http.post('https://httpbin.org/get', JSON.stringify(form.value))
-      // .map(res => res)
-      // .subscribe(dados => console.log(dados));
+  onSubmit(){
+    this.signupService.signUp(this.user).subscribe(res => {
+      localStorage.setItem('token', res.token)
+      this.router.navigate(['/home-usuario'])
+    },
+    err => console.log(err))
   }
 
   ngOnInit(): void {
+
   }
 
 }
