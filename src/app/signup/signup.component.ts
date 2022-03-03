@@ -11,6 +11,7 @@ import { Signup } from '../modelInterface/signup';
 export class SignupComponent implements OnInit {
 
   constructor(private signupService: SignupService, private router: Router) { }
+  
   user:Signup =  {
     email:'',
     password:'',

@@ -8,6 +8,8 @@ import { PaginaUsuarioComponent } from './app-beneficiario/pagina-usuario/pagina
 import { SignupComponent } from './signup/signup.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { SigninComponent } from 'src/app/signin/signin.component';
+
 
 
 @NgModule({
@@ -15,7 +17,9 @@ import { HttpClientModule } from '@angular/common/http';
     AppComponent,
     PaginaUsuarioComponent,
     PaginaUsuarioComponent,
-    SignupComponent
+    SignupComponent,
+    SigninComponent
+
   ],
   imports: [
     BrowserModule,
