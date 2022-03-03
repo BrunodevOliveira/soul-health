@@ -11,12 +11,12 @@ export class SobreComponent implements OnInit {
 
 
  activeTab: string = 'institucional';
-
+// Função controladora da Tab selecionada pelo usuário, para exibir seu conteúdo em tela.
   handleActiveTab(tab:string){
     this.activeTab = tab;
   }
 
-  
+
   ngOnInit(): void {
   }
 
