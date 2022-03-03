@@ -1,8 +1,112 @@
 @import '../../../SASS/main'
 
-.header
-  background-color: $secondary-color
-  color: $text-color
+// Reset
+*
+  box-sizing: border-box
 
+// Classes
+
+.header
+  ul
+    list-style: none
+
+.header-navbar
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  @include container-navbar
+
+  .header-social-media
+    ul
+      list-style: none
+      @include flex-center
+      height: 100%
+    li
+      margin: 0 1rem
+      a
+        color: $text-color
+        font-size: 1.2rem
+        &:hover
+          color: $primary-color
+
+.listCenter
+  a
+    color: $text-color
+    font-size: 1rem
+    &:hover
+      color: $primary-color
+
+.listRight
+  @include flex-center
+
+.btn-success
+  max-width: 200px
+  background-color: $text-color
+  border: none
+  color: #fff
+  padding: 0.5rem 1rem
+  margin-right: 2rem
+  text-align: center
+  text-decoration: none
+  display: inline-block
+  font-size: 1rem
+  border-radius: 5px
+
+  &:hover
+    background-color: $primary-color
+    color: $text-color
+
+.navbar
+  background: $primary-color
+  height: 90px
+
+  i
+    color: $text-color
+    font-size: 1.2rem
+    &:hover
+      color: #fff
+      text-decoration: none
+
+  padding: 0
+  a
+    font-size: 1rem
+    padding: 0.5rem 1rem
+    &:hover
+      color: #fff
+      text-decoration: none
+
+.container-fluid
+  padding-left: 0
+
+.fancy-border
+  border-top: 100px solid #FFF
+  border-left: 0px solid transparent
+  border-right: 80px solid transparent
+  height: 100px
+  width: 300px
+  position: relative
+  img
+    position: absolute
+    top: -65px
+    left: 70px
+
+// Media queries
+
+@media (max-width: 851px)
+  .listCenter
+    display: none
+
+@media (max-width: 500px)
+  .fancy-border
+    border-top: 100px solid #FFF
+    border-left: 0px solid transparent
+    border-right: 80px solid transparent
+    height: 100px
+    width: 150px
+    position: relative
+    img
+      position: absolute
+      top: -65px
+      left: 70px
 
 
