@@ -9,12 +9,14 @@ import { SignupComponent } from './signup/signup.component';
 import { FormsModule } from '@angular/forms';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
     PaginaUsuarioComponent,
     PaginaUsuarioComponent,
-    SignupComponent
+    SignupComponent,
+
   ],
   imports: [
     BrowserModule,
