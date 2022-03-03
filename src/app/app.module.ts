@@ -9,6 +9,8 @@ import { SobreComponent } from './app-institucional/sobre/sobre.component';
 import { SignupComponent } from './signup/signup.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { SigninComponent } from 'src/app/signin/signin.component';
+
 
 
 @NgModule({
@@ -17,7 +19,9 @@ import { HttpClientModule } from '@angular/common/http';
     PaginaUsuarioComponent,
     PaginaUsuarioComponent,
     SobreComponent,
-    SignupComponent
+    SignupComponent,
+    SigninComponent
+
   ],
   imports: [
     BrowserModule,

@@ -1,3 +1,4 @@
+import { SigninComponent } from './signin/signin.component';
 import { SignupComponent } from './signup/signup.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -7,6 +8,9 @@ import { SobreComponent } from './app-institucional/sobre/sobre.component';
 
 const routes: Routes = [
   {
+    path: "", redirectTo: '/', pathMatch: 'full'
+  },
+  {
     path:'home-usuario', component: PaginaUsuarioComponent
   },
   {
@@ -15,6 +19,9 @@ const routes: Routes = [
   {
     path: 'sobre', component: SobreComponent
   },
+  {
+    path: 'signin', component: SigninComponent
+  }
 ];
 
 @NgModule({
