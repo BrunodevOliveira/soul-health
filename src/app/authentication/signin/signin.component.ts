@@ -17,6 +17,7 @@ export class SigninComponent implements OnInit {
     password:'',
     token:''
   }
+
   constructor(private httpclient: HttpClient,
   private router: Router,
   private signinservice: SigninService ) { }
@@ -29,10 +30,9 @@ export class SigninComponent implements OnInit {
     return this.signinservice.signIn(this.user).subscribe(res=> {
       console.log(res)
       localStorage.setItem('token', res.token)
-      this.router.navigate(['/home-usuario'])
-    })
+      this.router.navigate(['/home-beneficiario'])
+    }, err=> console.log(err))
 
   }
-
 
 }
