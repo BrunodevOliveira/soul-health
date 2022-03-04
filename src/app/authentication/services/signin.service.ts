@@ -15,8 +15,7 @@ export class SigninService {
   constructor(private http: HttpClient,
               private router: Router) { }
 
-
-  signIn(user:Signin){
+  signIn(user:Signin) {
     return this.http.post<Signin>(this.url + '/signin', user)
   }
 
