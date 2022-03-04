@@ -1,0 +1,220 @@
+<!-- Jumbotron com a introdução da Página, com os beneficios do plano de saúde-->
+<div class="jumbotron my-5 mx-4">
+  <div class="ms-4">
+    <h1 class="display-4">Soul Health</h1>
+    <p class="lead"></p>
+    <hr class="mt-4" />
+    <div class="row col-12 col-lg-12 m-auto featurette">
+      <div class="col-12 col-md-6 col-sm-6 col-lg-6">
+        <h2 class="featurette-heading">O Melhor Plano de Saude do Brasil</h2>
+        <h3><span class="text-muted">Listado pela ANS</span></h3>
+        <p class="lead m-3">
+          Há 125 anos, a Soul Health se dedica a entregar Saúde Integral para
+          seus mais de 7 milhões de clientes
+        </p>
+        <h5>Os serviços oferecidos, incluem:</h5>
+
+        <ul class="m-0">
+          <li>25 mil serviços Credenciados;</li>
+          <li>Atendimento por Telemedicina;</li>
+          <li>Carteirinha digital;</li>
+          <li>Descontos de até 85% em farmácias;</li>
+          <li>Clube de vantagens;</li>
+          <li>Exames com até 70% de desconto;</li>
+          <li>E muito mais!</li>
+        </ul>
+      </div>
+      <div class="pt-1 col-12 col-md-12 col-sm-12 col-lg-6">
+        <img
+          class="featurette-image img-fluid"
+          data-src="holder.js/500x500/auto"
+          alt="500x500"
+
+          src="../../../assets/saude.jpg"
+          data-holder-rendered="true"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Fim da introdução da Página-->
+
+<!-- Tabs com detalhes Institucionais Sobre o Plano de Saúde -->
+<div class="row background mb-5 p-3 col-12 col-lg-11 m-auto pt-3">
+  <div id="tabs" #tabs class="px-5 py-2 col-12 col-sm-12 col-md-12 col-lg-12">
+    <ul class="flex nav nav-pills mb-3" id="pills-tab" role="tablist">
+      <li class="nav-item col-sm-3 col-md-3 col-lg-3 me-1">
+        <a
+          class="nav-link active"
+          id="institucional-tab"
+          data-toggle="pill"
+          role="tab"
+          aria-selected="false"
+          [ngClass]="{ active: activeTab === 'institucional' }"
+          (click)="handleActiveTab('institucional')"
+          [routerLink]="['./']"
+          fragment="institucional"
+          >Sobre</a
+        >
+      </li>
+      <li class="nav-item col-sm-4 col-md-3 col-lg-3 me-1">
+        <a
+          class="nav-link"
+          id="sustentabilidade-tab"
+          data-toggle="pill"
+          role="tab"
+          aria-selected="false"
+          [ngClass]="{ active: activeTab === 'sustentabilidade' }"
+          (click)="handleActiveTab('sustentabilidade')"
+          [routerLink]="['./']"
+          fragment="sustentabilidade"
+          >Sustentabilidade</a
+        >
+      </li>
+      <li class="nav-item col-sm-3 col-md-3 col-lg-3">
+        <a
+          class="nav-link"
+          id="destaques-tab"
+          data-toggle="pill"
+          role="tab"
+          aria-selected="false"
+          [ngClass]="{ active: activeTab === 'destaques' }"
+          (click)="handleActiveTab('destaques')"
+          [routerLink]="['./']"
+          fragment="destaques"
+          >Destaques</a
+        >
+      </li>
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+      <div
+        class="tab-pane show"
+        id="institucional"
+        role="tabpanel"
+        aria-labelledby="institucional-tab"
+        [ngClass]="{ active: activeTab === 'institucional' }"
+      >
+        <p>
+          Soul Health é uma companhia de mais de 125 anos que se dedica a
+          entregar Saúde Integral para seus mais de 7 milhões de clientes por
+          meio de produtos e serviços de Saúde, Odonto, Vida, Previdência e
+          Investimentos.
+        </p>
+        <p>
+          A companhia tem como missão melhorar a vida das pessoas, oferecendo
+          apoio, segurança e autonomia em cada momento e decisão de saúde
+          física, emocional e financeira.
+        </p>
+        <p>
+          Para isso, conta com mais de 4 mil colaboradores engajados e
+          comprometidos, além de uma rede de distribuição com milhares de
+          corretores de seguros em todo o Brasil.
+        </p>
+        <div class="row">
+          <img
+            src="../../../assets/medicas.webp"
+            class="m-auto pt-2"
+            style="max-width: 500px; max-height: 300px"
+            alt="Saúde Integrau"
+          />
+          <img
+            src="../../../assets/exames.webp"
+            class="m-auto pt-2"
+            style="max-width: 500px; max-height: 300px"
+            alt="Saúde Integrau"
+          />
+        </div>
+      </div>
+      <div
+        class="tab-pane"
+        id="sustentabilidade"
+        role="tabpanel"
+        aria-labelledby="sustentabilidade-tab"
+        [ngClass]="{ active: activeTab === 'sustentabilidade' }"
+      >
+        <p>
+          Uma coisa nós sabemos sobre Saúde Integral, ela é o resultado do
+          tempo, das oportunidades e das escolhas que fazemos todos os dias.
+        </p>
+        <p>
+          Assim também é a sustentabilidade. Ela não nasce do dia para noite.
+        </p>
+        <p>
+          De forma estratégica, a Soul Health iniciou sua jornada de integração
+          da sustentabilidade há mais de dez anos. Faz parte dos nossos
+          princípios contribuir de maneira positiva para a sociedade e o meio
+          ambiente. Porém, sabemos que o melhor jeito de prever o futuro,
+          criando serviços e soluções que atendam ele, é construindo-o dia após
+          dia.
+        </p>
+        <p>
+          Por isso, nossa tomada de decisão sempre passa pela sustentabilidade.
+          Fazemos negócios com responsabilidade e acreditamos no desenvolvimento
+          para melhorar o mundo em que vivemos.
+        </p>
+        <p>
+          Nossa atuação é orientada por compromissos públicos assumidos como os
+          Princípios para o Investimento Responsável (PRI), os Princípios para
+          Sustentabilidade em Seguros (PSI) e o Pacto Global, iniciativas
+          suportadas pela ONU. Também adotamos diversas medidas frente à
+          pandemia de coronavírus - veja em português e em inglês.
+        </p>
+      </div>
+      <div
+        class="tab-pane"
+        id="destaques"
+        role="tabpanel"
+        aria-labelledby="destaques-tab"
+        [ngClass]="{ active: activeTab === 'destaques' }"
+      >
+        <div class="container marketing">
+          <div class="row">
+            <div class="col-lg-6 m-auto ps-5">
+              <img
+                class="rounded-circle"
+                src="../../../assets/geriatria.jpg"
+                alt="Generic placeholder image"
+                width="140"
+                height="140"
+              />
+              <h2>Ortopedia Geriátrica</h2>
+              <p>
+                A cada ano, aproximadamente 30 a 40% dos idosos caem pelo menos
+                uma vez, e as consequências negativas extrapolam o aspecto
+                físico, sendo também psíquicas e sociais.
+              </p>
+              <p>
+                Ao contrário do que muitos imaginam, prevenir quedas não se
+                trata apenas de proporcionar um ambiente seguro, amplo,
+                iluminado e com barras de apoio.
+              </p>
+            </div>
+            <div class="col-lg-6 m-auto ps-5">
+              <img
+                class="rounded-circle"
+                src="../../../assets/neuro.jpg"
+                alt="Generic placeholder image"
+                width="140"
+                height="140"
+              />
+              <h2>Neurologia Infantil</h2>
+              <p>
+                A Neurologia Infantil, também conhecida como neuropediatria, é a
+                especialidade que avalia o sistema nervoso central (cérebro,
+                cerebelo e tronco encefálico) e periférico (nervos) das
+                crianças.
+              </p>
+              <p>
+                É o neurologista infantil que acompanha o desenvolvimento
+                neurológico das crianças, através de exame clínico minucioso e
+                análise das aquisições motoras, cognitivas e de linguagem ao
+                longo do tempo, permitindo diagnosticar e tratar doenças.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Fim das tabs -->

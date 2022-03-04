@@ -1,3 +1,5 @@
+
+
 <main class="container">
 
   <div class="row justify-content-center my-5">
@@ -6,7 +8,7 @@
       class="d-none d-sm-block col-md-12 col-lg-7 text-center align-self-center"
       >
       <img
-        src="../../assets/medica-signup.jpeg"
+        src="../../assets/shutterstock_426687286.jpg"
         alt="cadastro imagem"
         class="img-fluid rounded"
       >
@@ -14,33 +16,11 @@
 
     <div class="col-md col-lg-5  align-self-center my-3">
 
-      <form #f="ngForm" class="needs-validation" novalidade (submit)="onSubmit()">
-        <h5 class="text-center">Preencha os campos para criar sua conta </h5>
+      <form #f="ngForm" class="needs-validation" novalidade>
+        <h5 class="text-center"> Faça seu login  </h5>
 
         <hr style="width: 50%; margin: 15px auto;">
 
-        <!-- <div class="mt-2">
-            <label for="name">Nome completo</label>
-            <div class="input-group input-group-lg">
-              <span class="input-group-text" id="inputGroup-sizing-lg">
-                  <i class="bi bi-person-fill"></i>
-              </span>
-              <input
-                type="text"
-                class="form-control"
-                id="name"
-                name="name"
-                required
-                #name="ngModel"
-                placeholder="Nome completo"
-                [(ngModel)]="user.name"
-                minlength="4"
-              />
-            </div>
-            <div *ngIf="!name.valid && name.touched" class="error">
-              <i class="bi bi-exclamation-triangle"></i> Nome completo obrigatório
-            </div>
-        </div> -->
 
         <div class="mt-2">
             <label for="email" class="form-label">Email</label>
@@ -84,18 +64,21 @@
                 #password="ngModel"
                 required
                 [(ngModel)]="user.password"
-                minlength="4"
+                minlength="0"
               />
             </div>
 
             <div *ngIf="!password.valid && password.touched" class="error">
-              <i class="bi bi-exclamation-triangle"></i> Sua senha deve ter no mínimo 4 caracteres
+              <i class="bi bi-exclamation-triangle"></i> O campo de senha não pode estar vazio
             </div>
         </div>
 
         <div class="d-grid gap-2 col-6 mx-auto mt-4">
-          <button type="submit" class="btn btn-primary" [disabled]="f.invalid" >Cadastrar</button>
+          <button type="submit" class="btn btn-primary" [disabled]="f.invalid" >Login</button>
         </div>
+
+        <p class="text-center text-muted mt-3"> Ainda não tem conta? <a routerLink="/signup">Cadastre-se aqui</a> </p>
+        <hr style="width: 50%; margin: 15px auto;">
         <p class="text-center text-muted mt-3">Ou entre com:</p>
 
         <div class="d-flex justify-content-evenly">
@@ -133,5 +116,7 @@
 
   </div>
 </main>
+
+
 
 
