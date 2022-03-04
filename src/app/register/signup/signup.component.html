@@ -1,5 +1,3 @@
-
-
 <main class="container">
 
   <div class="row justify-content-center my-5">
@@ -8,7 +6,7 @@
       class="d-none d-sm-block col-md-12 col-lg-7 text-center align-self-center"
       >
       <img
-        src="../../assets/shutterstock_426687286.jpg"
+        src="../../assets/medica-signup.jpeg"
         alt="cadastro imagem"
         class="img-fluid rounded"
       >
@@ -16,11 +14,10 @@
 
     <div class="col-md col-lg-5  align-self-center my-3">
 
-      <form #f="ngForm" class="needs-validation" novalidade  (submit)="signIn()">
-        <h5 class="text-center"> Faça seu login  </h5>
+      <form #f="ngForm" class="needs-validation" novalidade (submit)="onSubmit()">
+        <h5 class="text-center">Preencha os campos para criar sua conta </h5>
 
         <hr style="width: 50%; margin: 15px auto;">
-
 
         <div class="mt-2">
             <label for="email" class="form-label">Email</label>
@@ -40,6 +37,7 @@
                 required
                 [email]="true"
                 [(ngModel)]="user.email"
+
               />
             </div>
             <div *ngIf="!email.valid && email.touched" class="error">
@@ -59,24 +57,22 @@
                 id="password"
                 class="form-control user-select-none"
                 placeholder="Senha"
+                name="password"
                 #password="ngModel"
                 required
                 [(ngModel)]="user.password"
-                minlength="0"
+                minlength="4"
               />
             </div>
 
             <div *ngIf="!password.valid && password.touched" class="error">
-              <i class="bi bi-exclamation-triangle"></i> O campo de senha não pode estar vazio
+              <i class="bi bi-exclamation-triangle"></i> Sua senha deve ter no mínimo 4 caracteres
             </div>
         </div>
 
         <div class="d-grid gap-2 col-6 mx-auto mt-4">
-          <button type="submit" class="btn btn-primary" [disabled]="f.invalid" >Login</button>
+          <button type="submit" class="btn btn-primary" [disabled]="f.invalid" >Cadastrar</button>
         </div>
-
-        <p class="text-center text-muted mt-3"> Ainda não tem conta? <a routerLink="/signup">Cadastre-se aqui</a> </p>
-        <hr style="width: 50%; margin: 15px auto;">
         <p class="text-center text-muted mt-3">Ou entre com:</p>
 
         <div class="d-flex justify-content-evenly">
@@ -114,7 +110,5 @@
 
   </div>
 </main>
-
-
 
 

@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Signup } from '../modelInterface/signup';
+import { Signup } from '../models/signup';
 
 
 

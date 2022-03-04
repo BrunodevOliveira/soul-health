@@ -1,12 +1,12 @@
-import { Signin } from './../modelInterface/signin';
-import { SigninService } from './../service/signin.service';
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
+import { SigninService } from '../services/signin.service';
+import { Signin } from '../models/signin';
 
 
 @Component({
-  selector: 'app-signin',
+  selector: 'signin',
   templateUrl: './signin.component.html',
   styleUrls: ['./signin.component.sass']
 })
