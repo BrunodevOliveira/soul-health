@@ -1,17 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-sobre',
-  templateUrl: './sobre.component.html',
-  styleUrls: ['./sobre.component.sass']
+  selector: 'aboutInstitutional',
+  templateUrl: './about.component.html',
+  styleUrls: ['./about.component.sass']
 })
-export class SobreComponent implements OnInit {
+
+export class AboutComponent implements OnInit {
 
   constructor() { }
 
-
- activeTab: string = 'institucional';
 // Função controladora da Tab selecionada pelo usuário, para exibir seu conteúdo em tela.
+ activeTab: string = 'institucional';
+
   handleActiveTab(tab:string){
     this.activeTab = tab;
   }
