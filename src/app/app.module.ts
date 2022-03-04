@@ -9,6 +9,7 @@ import { SobreComponent } from './app-institucional/sobre/sobre.component';
 import { SignupComponent } from './signup/signup.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { FooterComponent } from './app-shared/footer/footer.component';
 import { SigninComponent } from 'src/app/signin/signin.component';
 
 
@@ -18,8 +19,9 @@ import { SigninComponent } from 'src/app/signin/signin.component';
     AppComponent,
     PaginaUsuarioComponent,
     PaginaUsuarioComponent,
-    SobreComponent,
     SignupComponent,
+    FooterComponent,
+    SobreComponent,
     SigninComponent
 
   ],

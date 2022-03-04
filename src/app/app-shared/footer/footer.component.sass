@@ -1,0 +1,56 @@
+@import '../../../SASS/main'
+
+footer
+  background-color: $primary-color
+  color: $text-color
+
+.social-media
+  i
+    &:hover
+      color: #fff
+
+
+#copyright
+  background-color: rgba(0, 0, 0, 0.05)
+  a
+    color: $text-color
+    text-decoration: none
+    &:hover
+      color: #fff
+
+#products
+  p
+    a
+      color: $text-color
+      text-decoration: none
+    i
+    &:hover
+      color: #fff
+
+#bg
+  color: $primary-color
+
+#img
+  a
+
+    img
+      width: 90px
+      object-fit: cover
+      object-position: center
+      padding: 0.3rem
+      border-radius: 8px
+      position: relative
+      top: 0
+      &:hover
+        top: -4px
+        box-shadow: -4px 4px 4px $text-color
+        transition: .2s ease-in-out
+        opacity: 0.9
+      &:focus
+        outline: outset
+
+@media (max-width: 991px)
+  #img
+    display: none
+
+
