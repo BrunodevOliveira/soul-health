@@ -29,6 +29,10 @@ const routes: Routes = [
 {
     path: 'departamentos',
     loadChildren: () => import('./departments/departments.module').then(c => c.DepartmentsModule)
+  },
+{
+    path: 'lista-medicos',
+    loadChildren: () => import('./doctors/doctors.module').then(c => c.DoctorsModule)
   }
 
 ];
