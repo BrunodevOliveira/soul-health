@@ -9,6 +9,7 @@ import { SharedModule } from './app-shared/shared-module/shared.module';
 import { AppComponent } from './app.component';
 import { SigninComponent } from './authentication/signin/signin.component';
 import { SignupComponent } from './register/signup/signup.component';
+import { AppHomeComponent } from './app-home/app-home.component';
 
 
 
@@ -17,7 +18,8 @@ import { SignupComponent } from './register/signup/signup.component';
     AppComponent,
     FooterComponent,
     SignupComponent,
-    SigninComponent
+    SigninComponent,
+    AppHomeComponent
 
   ],
   imports: [
