@@ -38,9 +38,18 @@
 
   <div class="listRight">
     <ul class="nav nav-pills nav-fill" >
+      <ng-container *ngIf="!log.loggedIn(); else loggedIn">
       <li class="nav-item">
         <a routerLink="/signin" class="btn btn-success" > <i class="bi bi-person-fill"> </i> Login</a>
       </li>
+    </ng-container>
+    <ng-template #loggedIn>
+      <li class="nav-item">
+        <a routerLink="/login" class="btn btn-success" (click)="logoutservice.logout()"> <i class="bi bi-door-open"></i>Logout</a>
+      </li>
+    </ng-template>
+
+
     </ul>
   </div>
 </div>

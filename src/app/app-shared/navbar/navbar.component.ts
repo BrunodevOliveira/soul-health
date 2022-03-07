@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { LogService } from 'src/app/authentication/services/log.service';
+import { LogoutService } from './../../authentication/services/logout.service';
+
+
 
 @Component({
   selector: 'app-navbar',
@@ -7,7 +11,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  constructor(public logoutservice: LogoutService,
+              public log: LogService) { }
 
   ngOnInit(): void {
   }
