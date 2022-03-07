@@ -1,38 +1,45 @@
 @import '../../../SASS/main'
 
 footer
-  background-color: $primary-color
-  color: $text-color
+  background-color: $bg-color
+  font-family: $fonte-primary
+
+.container
+  color: #E7FEFC
+  i
+    padding-right: 0.5rem
 
 .social-media
+  padding-bottom: 0
   i
+    color:#E7FEFC
     &:hover
-      color: #fff
-
+      color: $text-color-light
 
 #copyright
   background-color: rgba(0, 0, 0, 0.05)
+  color: #E7FEFC
   a
-    color: $text-color
+    color: #E7FEFC
     text-decoration: none
     &:hover
-      color: #fff
+      color: $text-color-light
 
 #products
   p
     a
-      color: $text-color
+      color: #E7FEFC
       text-decoration: none
     i
     &:hover
-      color: #fff
+      color: $text-color-light
 
 #bg
   color: $primary-color
 
 #img
+  color: #E7FEFC
   a
-
     img
       width: 90px
       object-fit: cover
@@ -43,7 +50,7 @@ footer
       top: 0
       &:hover
         top: -4px
-        box-shadow: -4px 4px 4px $text-color
+        box-shadow: -4px 4px 4px #E7FEFC
         transition: .2s ease-in-out
         opacity: 0.9
       &:focus
@@ -52,5 +59,6 @@ footer
 @media (max-width: 991px)
   #img
     display: none
+
 
 
