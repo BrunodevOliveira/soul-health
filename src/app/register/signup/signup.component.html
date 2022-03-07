@@ -43,6 +43,9 @@
             <div *ngIf="!email.valid && email.touched" class="error">
               <i class="bi bi-exclamation-triangle"></i> Preencha com um email valido
             </div>
+            <div *ngIf="resValidation == 'existing email'" class="error">
+              <i class="bi bi-exclamation-triangle"></i> Este email ja foi cadastrado
+            </div>
         </div>
 
         <div class="mt-2">
