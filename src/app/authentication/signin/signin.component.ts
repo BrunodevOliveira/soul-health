@@ -18,6 +18,8 @@ export class SigninComponent implements OnInit {
     token:''
   }
 
+  resValidation: any = ''
+
   constructor(private httpclient: HttpClient,
   private router: Router,
   private signinservice: SigninService ) { }
@@ -28,11 +30,11 @@ export class SigninComponent implements OnInit {
 
   signIn(){
     return this.signinservice.signIn(this.user).subscribe(res=> {
-      console.log(res)
       localStorage.setItem('token', res.token)
       this.router.navigate(['/home-beneficiario'])
-    }, err=> console.log(err))
-
+    },
+    err=> {this.resValidation = err.error.message
+          console.log(err)})
   }
 
 }
