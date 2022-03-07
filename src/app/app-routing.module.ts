@@ -1,11 +1,15 @@
+import { AppHomeComponent } from './app-home/app-home.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AuthguardGuard } from './beneficiaryUser/homeUser/authguard.guard';
 
 const routes: Routes = [
   {
-    path: '', redirectTo: '/', pathMatch: 'full'
-  },
+    path: '', pathMatch: 'full', redirectTo: 'app-app-home'
+ },
+ {
+   path:'app-app-home', component: AppHomeComponent
+ },
   {
     path: 'home-beneficiario', canActivate: [AuthguardGuard],
     loadChildren: () => import('./beneficiaryUser/beneficiaryUser.module').then(c => c.BeneficiaryUserModule)
