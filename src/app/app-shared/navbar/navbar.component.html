@@ -19,7 +19,7 @@
       </li>
       <li>
         <a href="#">
-          <i class="fab fa-youtube"></i>
+          <i class="fa-brands fa-whatsapp"></i>
         </a>
       </li>
     </ul>
@@ -28,7 +28,7 @@
   <div class="listCenter ">
     <ul class="nav nav-pills nav-fill" >
       <li class="nav-item">
-        <a class="nav-link" href="#"><b>Ligue agora: </b>21 99999-9999</a>
+        <a class="nav-link" href="#"><b> Ligue agora: </b>21 9999-9999</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#"><b>E-mail: </b>contato@soulhealth.com.br</a>
@@ -40,7 +40,7 @@
     <ul class="nav nav-pills nav-fill" >
       <ng-container *ngIf="!log.loggedIn(); else loggedIn">
       <li class="nav-item">
-        <a routerLink="/login" class="btn btn-success" > <i class="bi bi-person-fill"> </i>Login</a>
+        <a routerLink="/signin" class="btn btn-success" > <i class="bi bi-person-fill"> </i> Login</a>
       </li>
     </ng-container>
     <ng-template #loggedIn>
@@ -54,20 +54,26 @@
   </div>
 </div>
 
+
 <header>
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid">
-      <div class="fancy-border">
-        <a href="">
-          <img src="../../../assets/logo-dark.png" width="100" alt="Logo" class="logo">
+      <div class="fancy-border"> <!--Imagem dentro da forma geométrica-->
+        <a class="d-none d-md-flex" href="">
+          <img src="../../../assets/logo_esquerda-removebg-preview.png"  alt="Logo" class="logomd">
         </a>
-      </div><!--Imagem dentro da forma geométrica-->
+        <a class="d-md-none d-flex" href="">
+          <img src="../../../assets/LogoSample_ByTailorBrands222-removebg-preview.png" alt="Logo" class="logosm">
+        </a>
+      </div>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+            <img src="../../../assets/logo_esquerda-removebg-preview.png"  alt="Logo" id="logo-offcanvas">
+          </h5>
           <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
@@ -88,15 +94,6 @@
               <a class="nav-link" href="#">Contatos</a>
             </li>
           </ul>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-center d-flex align-items-center me-5">
-              <li class="nav-item">
-                <a href="#">
-                  <i class="fa-solid fa-magnifying-glass"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
         </div>
       </div>
     </div>

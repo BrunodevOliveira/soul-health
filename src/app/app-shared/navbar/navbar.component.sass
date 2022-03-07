@@ -6,10 +6,6 @@
 
 // Classes
 
-.header
-  ul
-    list-style: none
-
 .header-navbar
   display: flex
   justify-content: space-between
@@ -27,9 +23,10 @@
         color: $text-color
         font-size: 1.2rem
         &:hover
-          color: $primary-color
+         color: $primary-color
 
 .listCenter
+  font-family: $fonte-primary
   a
     color: $text-color
     font-size: 1rem
@@ -37,6 +34,7 @@
       color: $primary-color
 
 .listRight
+  font-family: $fonte-primary
   @include flex-center
 
 .btn-success
@@ -54,14 +52,15 @@
 
   &:hover
     background-color: $primary-color
-    color: $text-color
+    color: #E7FEFC
+
 
 .navbar
   background: $primary-color
   height: 90px
 
   i
-    color: $text-color
+    color: #E7FEFC
     font-size: 1.2rem
     &:hover
       color: #fff
@@ -69,15 +68,31 @@
 
   padding: 0
   a
+    font-family: $fonte-primary
     font-size: 1rem
     padding: 0.5rem 1rem
-    color: $text-color
+    color: #E7FEFC
     &:hover
       color: #fff
       text-decoration: none
 
 .container-fluid
   padding-left: 0
+
+.offcanvas
+  font-family: $fonte-primary
+
+.navbar-toggler .navbar-toggler-icon
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(231,254,252,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")
+
+.offcanvas-body
+  background: $offcanvas-color
+
+.navbar-toggler
+  border: #E7FEFC solid 1px
+  &:focus
+    color: #E7FEFC
+
 
 .fancy-border
   border-top: 100px solid #FFF
@@ -86,16 +101,24 @@
   height: 100px
   width: 300px
   position: relative
-  img
+  .logomd
+    width: 200px
     position: absolute
-    top: -65px
-    left: 70px
+    top: -150px
+    left: 35px
+  .logosm
+    width: 70px
+    position: absolute
+    top: -87px
+    left: 40%
+
 
 // Media queries
 
 @media (max-width: 871px)
   .listCenter
     display: none
+
 
 @media (max-width: 500px)
   .fancy-border
@@ -110,3 +133,8 @@
       top: -65px
       left: 70px
 
+@media (max-width: 991px)
+  .offcanvas
+    margin-top: -50px
+    .offcanvas-body
+     margin-top: -50px
