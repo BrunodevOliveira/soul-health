@@ -40,7 +40,7 @@
     <ul class="nav nav-pills nav-fill" >
       <ng-container *ngIf="!log.loggedIn(); else loggedIn">
       <li class="nav-item">
-        <a routerLink="/signin" class="btn btn-success" > <i class="bi bi-person-fill"> </i> Login</a>
+        <a routerLink="/login" class="btn btn-success" > <i class="bi bi-person-fill"> </i> Login</a>
       </li>
     </ng-container>
     <ng-template #loggedIn>

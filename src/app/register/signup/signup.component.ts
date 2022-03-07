@@ -21,12 +21,15 @@ export class SignupComponent implements OnInit {
     token:''
   }
 
+  resValidation: any = ''
+
   onSubmit(){
     this.signupService.signUp(this.user).subscribe(res => {
       localStorage.setItem('token', res.token)
       this.router.navigate(['/home-beneficiario'])
     },
-    err => console.log(err))
+    err=> {this.resValidation = err.error.message
+      console.log(err)})
   }
 
   ngOnInit(): void {

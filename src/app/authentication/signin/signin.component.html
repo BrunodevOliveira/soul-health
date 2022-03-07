@@ -11,7 +11,7 @@
     </div>
 
     <div class="col-md col-lg-5 align-self-center my-3">
-      <form #f="ngForm" class="needs-validation" novalidade (submit)="signIn()">
+      <form #f="ngForm" class="needs-validation" method="post" novalidade (submit)="signIn()">
         <h5 class="text-center">Faça seu login</h5>
 
         <hr style="width: 50%; margin: 15px auto" />
@@ -40,6 +40,9 @@
             <i class="bi bi-exclamation-triangle"></i> Preencha com um email
             valido
           </div>
+          <div *ngIf="resValidation == 'User not found'" class="error">
+            <i class="bi bi-exclamation-triangle"></i> Senha ou email invalido
+          </div>
         </div>
 
         <div class="mt-2">
@@ -65,6 +68,9 @@
           <div *ngIf="!password.valid && password.touched" class="error">
             <i class="bi bi-exclamation-triangle"></i> O campo de senha não pode
             estar vazio
+          </div>
+          <div *ngIf="resValidation == 'invalid password'" class="error">
+            <i class="bi bi-exclamation-triangle"></i> Senha ou usuario invalido
           </div>
         </div>
 
