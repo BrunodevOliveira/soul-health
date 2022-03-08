@@ -9,6 +9,12 @@ export class HomeUserComponent implements OnInit {
 
   constructor() { }
 
+activeTab: string = 'saudenatela';
+
+  handleActiveTab(tab:string){
+    this.activeTab = tab;
+  }
+
   ngOnInit(): void {
   }
 
