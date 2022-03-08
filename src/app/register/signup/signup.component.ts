@@ -15,7 +15,10 @@ export class SignupComponent implements OnInit {
 
   constructor(private signupService: SignupService, private router: Router) { }
 
-  user:Signup =  {
+  user: Signup =  {
+    name: '',
+    cpf: '',
+    phone: '',
     email:'',
     password:'',
     token:''
