@@ -1,258 +1,147 @@
-<section class="row pt-5">
+<section class="pt-5">
   <!-- Menu navegação do Beneficiário -->
-  <div class="col-sm-12 col-md-5 col-lg-3 pt-5">
-    <div class="accordion accordion-flush pt-1" id="accordionFlushExample">
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingOne">
-          <button
-            class="accordion-button collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#flush-collapseOne"
-            aria-expanded="false"
-            aria-controls="flush-collapseOne"
+  <div class="row background mb-5 p-3 col-12 col-lg-12 m-auto pt-3">
+    <div id="tabs" #tabs class="px-5 py-2 col-12 col-sm-12 col-md-12 col-lg-12">
+      <ul class="flex nav nav-tabs mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item col-sm-3 col-md-3 col-lg-3">
+          <a
+            class="nav-link active ms-1"
+            id="saudenatela-tab"
+            data-toggle="pill"
+            role="tab"
+            aria-selected="false"
+            [ngClass]="{ active: activeTab === 'saudenatela' }"
+            (click)="handleActiveTab('saudenatela')"
+            [routerLink]="['./']"
+            fragment="saudenatela"
+            >Saúde na Tela</a
           >
-            Hospitais Credenciados
-          </button>
-        </h2>
-        <div
-          id="flush-collapseOne"
-          class="accordion-collapse collapse"
-          aria-labelledby="flush-headingOne"
-          data-bs-parent="#accordionFlushExample"
-        >
-          <div class="accordion-body">
-            <p>
-              Temos uma ampla rede credenciada de hospitais, centros médicos,
-              laboratórios, consultórios médicos e centros diagnósticos para
-              atender todos nossos clientes.
-            </p>
-            <a href="#" class="btn btn-secondary">Saiba Mais</a>
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingTwo">
-          <button
-            class="accordion-button collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#flush-collapseTwo"
-            aria-expanded="false"
-            aria-controls="flush-collapseTwo"
+        </li>
+        <li class="nav-item col-sm-3 col-md-3 col-lg-3">
+          <a
+            class="nav-link ms-1"
+            id="perfil-tab"
+            data-toggle="pill"
+            role="tab"
+            aria-selected="false"
+            [ngClass]="{ active: activeTab === 'perfil' }"
+            (click)="handleActiveTab('perfil')"
+            [routerLink]="['./']"
+            fragment="perfil"
+            >Meu Perfil</a
           >
-            Procedimentos Cobertos
-          </button>
-        </h2>
-        <div
-          id="flush-collapseTwo"
-          class="accordion-collapse collapse"
-          aria-labelledby="flush-headingTwo"
-          data-bs-parent="#accordionFlushExample"
-        >
-          <div class="accordion-body">
-            <p>
-              A lista de procedimentos com cobertura obrigatória varia de acordo
-              com o tipo de plano contratado pelo segurado.
-            </p>
-            <a href="#" class="btn btn-secondary">Saiba Mais</a>
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingThree">
-          <button
-            class="accordion-button collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#flush-collapseThree"
-            aria-expanded="false"
-            aria-controls="flush-collapseThree"
+        </li>
+        <li class="nav-item col-sm-3 col-md-3 col-lg-3">
+          <a
+            class="nav-link ms-1"
+            id="dependentes-tab"
+            data-toggle="pill"
+            role="tab"
+            aria-selected="false"
+            [ngClass]="{ active: activeTab === 'dependentes' }"
+            (click)="handleActiveTab('dependentes')"
+            [routerLink]="['./']"
+            fragment="dependentes"
+            >Dependentes</a
           >
-            2ª via de Contrato
-          </button>
-        </h2>
-        <div
-          id="flush-collapseThree"
-          class="accordion-collapse collapse"
-          aria-labelledby="flush-headingThree"
-          data-bs-parent="#accordionFlushExample"
-        >
-          <div class="accordion-body">
-            <p>
-              Como fazer para solicitar uma segunda via do meu contrato? Se seu
-              contrato está em dia, você pode pedir a segunda via aqui em nosso
-              site.
-            </p>
-            <a href="#" class="btn btn-secondary">Saiba Mais</a>
+        </li>
+        <li class="nav-item col-sm-3 col-md-3 col-lg-3">
+          <a
+            class="nav-link ms-1"
+            id="agendamentos-tab"
+            data-toggle="pill"
+            role="tab"
+            aria-selected="false"
+            [ngClass]="{ active: activeTab === 'agendamentos' }"
+            (click)="handleActiveTab('agendamentos')"
+            [routerLink]="['./']"
+            fragment="agendamentos"
+            >Meus Agendamentos</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="tab-content" id="pills-tabContent">
+      <!-- Imagem e descrição do "Saúde na Tela" -->
+      <div
+        class="tab-pane col-lg-12 m-auto show"
+        id="saudenatela"
+        role="tabpanel"
+        aria-labelledby="saudenatela-tab"
+        [ngClass]="{ active: activeTab === 'saudenatela' }"
+      >
+        <div class="col-sm-none col-md-none col-lg-8 m-auto">
+          <div class="text-center">
+            <img
+              class="d-block w-auto col-sd-none col-md-none figure-img mt-2 img-fluid rounded"
+              src="../../../assets/equipemedica.jpg"
+              alt=""
+            />
+            <div class="py-lg-1">
+              <div class="float col-lg-12 mx-auto">
+                <h2 class="fw-light">Saúde na Tela</h2>
+                <p class="lead text-muted">
+                  Com o Saúde na Tela, você pode ser atendido por qualquer
+                  médico profissional, sem sair de casa.
+                  <br />
+                  Além de permitir que você receba prescrição de medicamentos,
+                  guia de exames ou encaminhamento.
+                  <br />
+                </p>
+                <p>
+                  <a href="#" class="btn letra btn-primary mx-2">Saiba Mais</a>
+                  <a href="#" class="btn letra btn-secondary my-1"
+                    >Solicitar Atendimento</a
+                  >
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingFive">
-          <button
-            class="accordion-button collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#flush-collapseFive"
-            aria-expanded="false"
-            aria-controls="flush-collapseFive"
-          >
-            Guias e Autorizações
-          </button>
-        </h2>
-        <div
-          id="flush-collapseFive"
-          class="accordion-collapse collapse"
-          aria-labelledby="flush-headingFive"
-          data-bs-parent="#accordionFlushExample"
-        >
-          <div class="accordion-body">
-            <p>
-              A autorização para exames, internações e serviços específicos pode
-              ser solicitada aqui no site.
-            </p>
-            <a href="#" class="btn btn-secondary">Saiba Mais</a>
-          </div>
-        </div>
+      <div
+        class="tab-pane show"
+        id="perfil"
+        role="tabpanel"
+        aria-labelledby="perfil-tab"
+        [ngClass]="{ active: activeTab === 'perfil' }"
+      >
+        <p>
+          Lorem ipsum 1, dolor sit amet consectetur adipisicing elit.
+          Exercitationem optio ad ex perspiciatis consequatur temporibus. Ab
+          explicabo error expedita ut facilis officiis. Doloremque nesciunt
+          facere dolor expedita rem sapiente recusandae!
+        </p>
       </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingSix">
-          <button
-            class="accordion-button collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#flush-collapseSix"
-            aria-expanded="false"
-            aria-controls="flush-collapseSix"
-          >
-            Demonstrativos
-          </button>
-        </h2>
-        <div
-          id="flush-collapseSix"
-          class="accordion-collapse collapse"
-          aria-labelledby="flush-headingSix"
-          data-bs-parent="#accordionFlushExample"
-        >
-          <div class="accordion-body">
-            <p>
-              Os demonstrativos de pagamentos do plano de saúde para declaração
-              de IR estão disponíveis no site.
-            </p>
-            <a href="#" class="btn btn-secondary">Saiba Mais</a>
-          </div>
-        </div>
+      <div
+        class="tab-pane"
+        id="dependentes"
+        role="tabpanel"
+        aria-labelledby="dependentes-tab"
+        [ngClass]="{ active: activeTab === 'dependentes' }"
+      >
+        <p>
+          Lorem, ipsum 2 dolor sit amet consectetur adipisicing elit. Itaque
+          eligendi illum, repellat placeat voluptas alias sint voluptate
+          necessitatibus sed facilis ea minima deserunt provident eos, similique
+          eveniet quas enim commodi.
+        </p>
       </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingSeven">
-          <button
-            class="accordion-button collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#flush-collapseSeven"
-            aria-expanded="false"
-            aria-controls="flush-collapseSeven"
-          >
-            Alteração de Cadastro
-          </button>
-        </h2>
-        <div
-          id="flush-collapseSeven"
-          class="accordion-collapse collapse"
-          aria-labelledby="flush-headingSeven"
-          data-bs-parent="#accordionFlushExample"
-        >
-          <div class="accordion-body">
-            <p>Solicitação de atualização dos dados cadastrais.</p>
-            <a href="#" class="btn btn-secondary">Saiba Mais</a>
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingEight">
-          <button
-            class="accordion-button collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#flush-collapseEight"
-            aria-expanded="false"
-            aria-controls="flush-collapseEight"
-          >
-            Cadastro de Dependentes
-          </button>
-        </h2>
-        <div
-          id="flush-collapseEight"
-          class="accordion-collapse collapse"
-          aria-labelledby="flush-headingEight"
-          data-bs-parent="#accordionFlushExample"
-        >
-          <div class="accordion-body">
-            <p>
-              Para saber quem pode ser incluído como dependente no seu plano de
-              saúde, primeiramente é necessário verificar o contrato
-              estabelecido
-            </p>
-            <a href="#" class="btn btn-secondary">Saiba Mais</a>
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingNine">
-          <button
-            class="accordion-button collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#flush-collapseNine"
-            aria-expanded="false"
-            aria-controls="flush-collapseNine"
-          >
-            Fale Conosco
-          </button>
-        </h2>
-        <div
-          id="flush-collapseNine"
-          class="accordion-collapse collapse"
-          aria-labelledby="flush-headingNine"
-          data-bs-parent="#accordionFlushExample"
-        >
-          <div class="accordion-body">
-            <p>Urgência, emergência e informações:</p>
-            <p>4004 5900</p>
-            <p>0800 970 0500</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Imagem e descrição do "Saúde na Tela" -->
-  <div class="col-sm-12 col-md-7 col-lg-9">
-    <div class="text-center">
-      <img
-        class="w-auto figure-img img-fluid rounded"
-        src="../../../assets/equipemedica.jpg"
-        alt=""
-      />
-      <div class="row py-lg-1">
-        <div class="col-lg-12 col-md-8 mx-auto">
-          <h2 class="fw-light">Saúde na Tela</h2>
-          <p class="lead text-muted">
-            Com o Saúde na Tela, você pode ser atendido por psicólogo, clínico
-            geral e outros profissionais sem sair de casa.
-            <br />
-            Além de permitir que você receba prescrição de medicamentos, guia de
-            exames ou encaminhamento.
-            <br />
-            Com comodidade, segurança e a qualidade que você já conhece, direto
-            na tela.
-          </p>
-          <p>
-            <a href="#" class="btn btn-primary mx-2">Saiba Mais</a>
-            <a href="#" class="btn btn-secondary my-1">Solicitar Atendimento</a>
-          </p>
-        </div>
+      <div
+        class="tab-pane"
+        id="agendamentos"
+        role="tabpanel"
+        aria-labelledby="agendamentos-tab"
+        [ngClass]="{ active: activeTab === 'agendamentos' }"
+      >
+        <p>
+          Lorem, ipsum 3 dolor sit amet consectetur adipisicing elit. Assumenda
+          repellat culpa perspiciatis, quis, reiciendis beatae fugit accusamus
+          asperiores cum laudantium magnam numquam fugiat quas ratione sit ab
+          pariatur architecto perferendis.
+        </p>
+        <div class="container marketing"></div>
       </div>
     </div>
   </div>
@@ -330,7 +219,6 @@
                     class="px-5 btn btn-sm btn-outline-secondary"
                   >
                     <a href="/lista-medicos" class="button">Consultar</a>
-
                   </button>
                 </div>
               </div>
@@ -365,10 +253,234 @@
     </div>
   </div>
   <df-messenger
-  intent="WELCOME"
-  chat-title="SoulHealt"
-  chat-icon="https://i.imgur.com/IdAHYS4.png"
-  agent-id="6cac0825-8688-4623-a93a-f44bf5ee352f"
-  language-code="pt-br"
-></df-messenger>
+    intent="WELCOME"
+    chat-title="SoulHealt"
+    agent-id="6cac0825-8688-4623-a93a-f44bf5ee352f"
+    language-code="pt-br"
+  ></df-messenger>
+</section>
+<!-- Contatos -->
+<section>
+  <div class="col-10 col-sm-10 col-md-9 col-lg-8 m-auto py-5">
+    <div class="accordion accordion-flush py-5" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseOne"
+            aria-expanded="false"
+            aria-controls="flush-collapseOne"
+          >
+            Central de Atendimento Beneficiário
+          </button>
+        </h2>
+        <div
+          id="flush-collapseOne"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingOne"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <ul>
+              <div class="col-lg-12">
+                <li>
+                  <p class="m-3">
+                    Capitais e Regiões Metropolitanas: 3004-1000
+                  </p>
+                </li>
+                <li>
+                  <p class="m-3">Demais Localidades: 0800-706-2363</p>
+                </li>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwo"
+            aria-expanded="false"
+            aria-controls="flush-collapseTwo"
+          >
+            SAC - Serviço de Atendimento ao Cliente
+          </button>
+        </h2>
+        <div
+          id="flush-collapseTwo"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingTwo"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <ul>
+              <div class="col-lg-12">
+                <li>
+                  <p class="m-3">
+                    Capitais e Regiões Metropolitanas: 3004-1000
+                  </p>
+                </li>
+                <li>
+                  <p class="m-3">Demais Localidades: 0800-706-2363</p>
+                </li>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingThree">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseThree"
+            aria-expanded="false"
+            aria-controls="flush-collapseThree"
+          >
+            Central de Agendamento
+          </button>
+        </h2>
+        <div
+          id="flush-collapseThree"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingThree"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <ul>
+              <div class="col-lg-12">
+                <li>
+                  <p class="m-3">
+                    Capitais e Regiões Metropolitanas: 3004-1000
+                  </p>
+                </li>
+                <li>
+                  <p class="m-3">Demais Localidades: 0800-706-2363</p>
+                </li>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingFive">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseFive"
+            aria-expanded="false"
+            aria-controls="flush-collapseFive"
+          >
+            Central de Atendimento ao Corretor
+          </button>
+        </h2>
+        <div
+          id="flush-collapseFive"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingFive"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <ul>
+              <div class="col-lg-12">
+                <li>
+                  <p class="m-3">
+                    Capitais e Regiões Metropolitanas: 3004-1000
+                  </p>
+                </li>
+                <li>
+                  <p class="m-3">Demais Localidades: 0800-706-2363</p>
+                </li>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingSix">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseSix"
+            aria-expanded="false"
+            aria-controls="flush-collapseSix"
+          >
+            Central de Atendimento Gestor PJ
+          </button>
+        </h2>
+        <div
+          id="flush-collapseSix"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingSix"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <ul>
+              <div class="col-lg-12">
+                <li>
+                  <p class="m-3">
+                    Capitais e Regiões Metropolitanas: 3004-1000
+                  </p>
+                </li>
+                <li>
+                  <p class="m-3">Demais Localidades: 0800-706-2363</p>
+                </li>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingSeven">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseSeven"
+            aria-expanded="false"
+            aria-controls="flush-collapseSeven"
+          >
+            Assistência Viagem Nacional e Internacional
+          </button>
+        </h2>
+        <div
+          id="flush-collapseSeven"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingSeven"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            <ul>
+              <div class="col-lg-12">
+                <li>
+                  <p class="m-3">
+                    Capitais e Regiões Metropolitanas: 3004-1000
+                  </p>
+                </li>
+                <li>
+                  <p class="m-3">Demais Localidades: 0800-706-2363</p>
+                </li>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <df-messenger
+    intent="WELCOME"
+    chat-title="SoulHealt"
+    chat-icon="https://i.imgur.com/IdAHYS4.png"
+    agent-id="6cac0825-8688-4623-a93a-f44bf5ee352f"
+    language-code="pt-br"
+  ></df-messenger>
 </section>
