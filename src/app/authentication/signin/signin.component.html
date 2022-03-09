@@ -79,12 +79,11 @@
             Login
           </button>
           <div *ngIf="attempts >= 3">
-            <p>Não sou um Medabot</p>
             <re-captcha siteKey="6LfBi8QeAAAAABv0_M8ls7nDIeKiv_FnwP9o-2hF" (resolved)="solutionCaptcha($event)">
             </re-captcha>
           </div>
         </div>
-        <span *ngIf="attempts > 0">Numero de tentativas de login: <strong>{{attempts}}</strong></span>
+        <span *ngIf="attempts > 0">Número de tentativas de login: <strong class="attempts">{{attempts}}</strong></span>
 
         <p class="text-center text-muted mt-3">
           Ainda não tem conta? <a routerLink="/cadastro">Cadastre-se aqui</a>
