@@ -3,7 +3,7 @@
   <div class="row background mb-5 p-3 col-12 col-lg-12 m-auto pt-3">
     <div id="tabs" #tabs class="px-5 py-2 col-12 col-sm-12 col-md-12 col-lg-12">
       <ul class="flex nav nav-tabs mb-3" id="pills-tab" role="tablist">
-        <li class="nav-item col-sm-3 col-md-3 col-lg-3">
+        <li class="nav-item col-10 col-sm-6 col-md-6 col-lg-3">
           <a
             class="nav-link active ms-1"
             id="saudenatela-tab"
@@ -17,7 +17,7 @@
             >Saúde na Tela</a
           >
         </li>
-        <li class="nav-item col-sm-3 col-md-3 col-lg-3">
+        <li class="nav-item col-10 col-sm-6 col-md-6 col-lg-3">
           <a
             class="nav-link ms-1"
             id="perfil-tab"
@@ -28,10 +28,10 @@
             (click)="handleActiveTab('perfil')"
             [routerLink]="['./']"
             fragment="perfil"
-            >Meu Perfil</a
+            >Meus Dados</a
           >
         </li>
-        <li class="nav-item col-sm-3 col-md-3 col-lg-3">
+        <li class="nav-item col-10 col-sm-6 col-md-6 col-lg-3">
           <a
             class="nav-link ms-1"
             id="dependentes-tab"
@@ -45,7 +45,7 @@
             >Dependentes</a
           >
         </li>
-        <li class="nav-item col-sm-3 col-md-3 col-lg-3">
+        <li class="nav-item col-10 col-sm-6 col-md-6 col-lg-3">
           <a
             class="nav-link ms-1"
             id="agendamentos-tab"
@@ -70,15 +70,16 @@
         aria-labelledby="saudenatela-tab"
         [ngClass]="{ active: activeTab === 'saudenatela' }"
       >
-        <div class="col-sm-none col-md-none col-lg-8 m-auto">
+        <div class="col-12 col-lg-8 m-auto">
           <div class="text-center">
             <img
-              class="d-block w-auto col-sd-none col-md-none figure-img mt-2 img-fluid rounded"
+              id="img"
+              class=" w-auto col-sd-none col-md-none figure-img mt-2 img-fluid rounded"
               src="../../../assets/equipemedica.jpg"
               alt=""
             />
             <div class="py-lg-1">
-              <div class="float col-lg-12 mx-auto">
+              <div class="float col-sm-10 col-lg-12 mx-auto">
                 <h2 class="fw-light">Saúde na Tela</h2>
                 <p class="lead text-muted">
                   Com o Saúde na Tela, você pode ser atendido por qualquer
