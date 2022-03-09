@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { SigninComponent } from './authentication/signin/signin.component';
 import { SignupComponent } from './register/signup/signup.component';
 import { AppHomeComponent } from './app-home/app-home.component';
+import { RecaptchaModule } from 'ng-recaptcha';
 
 
 
@@ -27,7 +28,8 @@ import { AppHomeComponent } from './app-home/app-home.component';
     AppRoutingModule,
     SharedModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    RecaptchaModule
   ],
   providers: [],
   bootstrap: [AppComponent],

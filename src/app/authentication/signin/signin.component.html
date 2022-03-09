@@ -75,10 +75,16 @@
         </div>
 
         <div class="d-grid gap-2 col-6 mx-auto mt-4">
-          <button type="submit" class="btn btn-primary" [disabled]="f.invalid">
+          <button type="submit" class="btn btn-primary" [disabled]="f.invalid" *ngIf="attempts < 3">
             Login
           </button>
+          <div *ngIf="attempts >= 3">
+            <p>Não sou um Medabot</p>
+            <re-captcha siteKey="6LfBi8QeAAAAABv0_M8ls7nDIeKiv_FnwP9o-2hF" (resolved)="solutionCaptcha($event)">
+            </re-captcha>
+          </div>
         </div>
+        <span *ngIf="attempts > 0">Numero de tentativas de login: <strong>{{attempts}}</strong></span>
 
         <p class="text-center text-muted mt-3">
           Ainda não tem conta? <a routerLink="/cadastro">Cadastre-se aqui</a>
@@ -117,6 +123,7 @@
           </a>
         </div>
       </form>
+      <!-- <div [hidden]="!captcha"></div> -->
     </div>
   </div>
 </main>
