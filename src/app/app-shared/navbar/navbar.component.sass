@@ -39,6 +39,7 @@
   .btn
     @include btn-secondary
     margin: 0
+    margin-right: 0.8rem
 
 
 .btn-success
@@ -74,12 +75,11 @@
 .navbar-toggler .navbar-toggler-icon
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(231,254,252,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")
 
-// .offcanvas-header
-//   background-color: $bg-color-secondary
+.offcanvas-header
+  background-color: $bg-color-secondary
 
 .offcanvas-body
   background: $offcanvas-color
-
 
 .navbar-toggler
   border: $text-color-secondary solid 1px
@@ -93,6 +93,7 @@
   height: 90px
   width: 300px
   position: relative
+  // top: -8px
   .logomd
     width: 200px
     position: absolute
@@ -111,19 +112,53 @@
   .listCenter
     display: none
 
-@media (min-width: 501px)
-  .logomd
-    width: 200px
-    position: absolute
-    top: -140px
-    left: 30px
-
 @media (max-width: 500px)
-  .logosm
-    width: 90px
-    position: absolute
-    top: -95px
-    left: 10%
+  .fancy-border
+    border-top: 90px solid #fff
+    border-left: 0px solid transparent
+    border-right: 80px solid transparent
+    height: 90px
+    width: 150px
+    position: relative
+    top: -8px
+    .logomd
+      width: 200px
+      position: absolute
+      top: -140px
+      left: 30px
+    .logosm
+      width: 90px
+      position: absolute
+      top: -90px
+      left: 5%
+    img
+      position: absolute
+      top: -65px
+      left: 15px
+
+@media (max-width: 991px) and (min-width: 501px)
+  .fancy-border
+    border-top: 90px solid #fff
+    border-left: 0px solid transparent
+    border-right: 80px solid transparent
+    height: 90px
+    width: 300px
+    position: relative
+    top: -8px
+    .logomd
+      width: 200px
+      position: absolute
+      top: -145px
+      left: 10px
+    .logosm
+      width: 100px
+      position: absolute
+      top: -95px
+      left: 35%
+    img
+      position: absolute
+      top: -65px
+      left: 15px
 
 
 @media (max-width: 991px)
