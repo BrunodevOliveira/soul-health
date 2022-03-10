@@ -89,7 +89,9 @@ activeTab: string = 'saudenatela';
 
     this.beneficierservice.updateUser(userId, this.user).subscribe(res=> {
       this.user = res
+      location.reload()
     }, err=> console.log(err))
-    this.router.navigate(['/home-beneficiario'])
+
   }
 }
+
