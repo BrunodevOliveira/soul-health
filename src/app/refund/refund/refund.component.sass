@@ -1,0 +1,61 @@
+@import "../../../SASS/main"
+
+.jumbotron
+  font-family: roboto
+  font-weight: bold
+  color: $primary-color
+  background-image: url("../../../../src/assets/Banner_OrientacaoReembolso-1920x600.jpg")
+  background-size: cover
+  height: 400px
+
+.container
+  padding-right: 0
+  padding-left: 0 !important
+
+.row
+  --bs-gutter-x: 0 !important
+
+h2
+  font-family: roboto
+  font-weight: bold
+  font-size: 2rem
+  color: $primary-color
+
+.card
+  button
+    @include btn-secondary
+  i
+    margin: 20px
+    font-size: 8rem
+    color: $text-color-primary
+
+.informacao
+
+  h5
+    color: $primary-color
+    font-size: 2rem
+    strong
+      color: $terciary-color
+
+  i
+    font-size: 2rem
+    color: $terciary-color
+
+  p
+    width: 80%
+    font-size: 1.2rem
+    color: $text-color-primary
+    text-align: justify
+
+.paragraph
+  display: flex
+  align-items: center
+  justify-content: center
+
+.accordion-body
+  a
+    color: $primary-color
+    font-weight: bold
+    text-decoration: none
+    &:hover
+      color: $terciary-color
