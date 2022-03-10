@@ -310,12 +310,28 @@
         aria-labelledby="agendamentos-tab"
         [ngClass]="{ active: activeTab === 'agendamentos' }"
       >
-        <p>
-          Lorem, ipsum 3 dolor sit amet consectetur adipisicing elit. Assumenda
-          repellat culpa perspiciatis, quis, reiciendis beatae fugit accusamus
-          asperiores cum laudantium magnam numquam fugiat quas ratione sit ab
-          pariatur architecto perferendis.
-        </p>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Especialidade</th>
+            <th scope="col">Data</th>
+            <th scope="col">Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let consults of consult">
+            <td>{{consults.specialty}}</td>
+            <td>{{consults.date}}</td>
+            <td class="d-flex justify-content-start">
+            <button type="button" class="btn btn-success me-2">Alterar Consulta</button>
+            <button type="button" class="btn btn-danger">Excluir Consulta</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+
         <div class="container marketing"></div>
       </div>
     </div>
