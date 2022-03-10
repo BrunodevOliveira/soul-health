@@ -270,57 +270,6 @@
             </div>
           </div>
         </div>
-
-        <!-- Modal para editar dados -->
-        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title">Editar campos</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <form (submit)="updateUser()">
-                  <div>
-                    <label for="nome_edit">Nome</label>
-                    <input type="text" name="nome_edit" id="nome_edit" class="form-control form-control-sm" value="{{user.name}}"
-                    [(ngModel)]="user.name" />
-                  </div>
-                  <div>
-                    <label for="cpf_edit">CPF</label>
-                    <input type="text" name="cpf_edit" id="cpf_edit"  class="form-control form-control-sm" value="{{user.cpf}}"
-                    [(ngModel)]="user.cpf"
-                    />
-                  </div>
-                  <div>
-                    <label for="tel_edit">Telefone</label>
-                    <input type="text" name="tel_edit" id="tel_edit" class="form-control form-control-sm" value="{{user.phone}}"
-                    [(ngModel)]="user.phone"
-                    />
-                  </div>
-                  <div>
-                    <label for="email_edit">Email</label>
-                    <input type="text" name="email_edit" id="email_edit" class="form-control form-control-sm" value="{{user.email}}"
-                    [(ngModel)]="user.email"
-                    />
-                  </div>
-                  <!-- <div>
-                    <label for="senha_edit">Senha</label>
-                    <input type="password" name="senha_edit" id="senha_edit" class="form-control form-control-sm"
-                    [(ngModel)]="user.password"
-                    />
-                  </div> -->
-                  <div class="modal-footer mx-auto">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                    <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Atualizar</button>
-                  </div>
-                </form>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
       </div>
 
       <!-- Planos e Benefícios -->
@@ -536,6 +485,7 @@
       </div>
     </div>
     <!-- Categorias de Planos de Saúde -->
+  </div>
 </section>
 <!-- Menu de acessos rápidos -->
 <section class="pt-5 text-center">
