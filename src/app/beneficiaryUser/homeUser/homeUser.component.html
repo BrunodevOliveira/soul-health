@@ -102,28 +102,49 @@
       </div>
       <!-- Inicio Meus dados -->
       <div
-      class="tab-pane col-lg-12 m-auto show"
-      id="perfil"
-      role="tabpanel"
-      aria-labelledby="perfil-tab"
-      [ngClass]="{ active: activeTab === 'perfil' }"
-    >
-      <h2 class="text-center">Dados Pessoais</h2>
-      <div class="card m-auto" style="width: 25rem;">
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item ">Nome <p class="text-muted"> {{user.name}} </p></li>
-          <li class="list-group-item">CPF <p class="text-muted">{{user.cpf}}</p></li>
-          <li class="list-group-item">Phone <p class="text-muted">{{user.phone}}</p></li>
-          <li class="list-group-item">Email <p class="text-muted">{{user.email}}</p></li>
-          <li class="list-group-item">Senha <input type="password" value="senhaprotegida" disabled></li>
-          <li class="list-group-item d-flex justify-content-end">
-            <button type="button" class="btn btn-success me-2">Alterar Dados</button>
-            <button type="button" class="btn btn-danger"  (click)="deleteUser()">Excluir conta</button>
-          </li>
-        </ul>
+        class="tab-pane col-lg-12 m-auto show"
+        id="perfil"
+        role="tabpanel"
+        aria-labelledby="perfil-tab"
+        [ngClass]="{ active: activeTab === 'perfil' }"
+      >
+        <h2 class="text-center">Dados Pessoais</h2>
+        <div class="card m-auto" style="width: 25rem">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              Nome
+              <p class="text-muted">{{ user.name }}</p>
+            </li>
+            <li class="list-group-item">
+              CPF
+              <p class="text-muted">{{ user.cpf }}</p>
+            </li>
+            <li class="list-group-item">
+              Phone
+              <p class="text-muted">{{ user.phone }}</p>
+            </li>
+            <li class="list-group-item">
+              Email
+              <p class="text-muted">{{ user.email }}</p>
+            </li>
+            <li class="list-group-item">
+              Senha <input type="password" value="senhaprotegida" disabled />
+            </li>
+            <li class="list-group-item d-flex justify-content-end">
+              <button type="button" class="btn btn-success me-2">
+                Alterar Dados
+              </button>
+              <button
+                type="button"
+                class="btn btn-danger"
+                (click)="deleteUser()"
+              >
+                Excluir conta
+              </button>
+            </li>
+          </ul>
+        </div>
       </div>
-      </div>
-
 
       <!-- Planos e Benefícios -->
 
@@ -310,27 +331,29 @@
         aria-labelledby="agendamentos-tab"
         [ngClass]="{ active: activeTab === 'agendamentos' }"
       >
-
-      <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">Especialidade</th>
-            <th scope="col">Data</th>
-            <th scope="col">Ações</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let consults of consult">
-            <td>{{consults.specialty}}</td>
-            <td>{{consults.date}}</td>
-            <td class="d-flex justify-content-start">
-            <button type="button" class="btn btn-success me-2">Alterar Consulta</button>
-            <button type="button" class="btn btn-danger">Excluir Consulta</button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Especialidade</th>
+              <th scope="col">Data</th>
+              <th scope="col">Ações</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let consults of consult">
+              <td>{{ consults.specialty }}</td>
+              <td>{{ consults.date }}</td>
+              <td class="d-flex justify-content-start">
+                <button type="button" class="btn btn-success me-2">
+                  Alterar Consulta
+                </button>
+                <button type="button" class="btn btn-danger">
+                  Excluir Consulta
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
 
         <div class="container marketing"></div>
       </div>
@@ -358,10 +381,7 @@
               <p class="card-text">Ambulatorial e Hospitalar</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="mx-auto btn-group">
-                  <button
-                    type="button"
-                    class="px-5 btn btn-sm btn-secondary"
-                  >
+                  <button type="button" class="px-5 btn btn-sm btn-secondary">
                     Marcar
                   </button>
                 </div>
@@ -382,11 +402,8 @@
               <p class="card-text">Boleto Atualizado</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="mx-auto btn-group">
-                  <button
-                    type="button"
-                    class="px-5 btn btn-sm btn-secondary"
-                  >
-                    Gerar
+                  <button type="button" class="px-5 btn btn-sm btn-secondary">
+                    <a href="/boleto" class="button"> Gerar </a>
                   </button>
                 </div>
               </div>
@@ -406,10 +423,7 @@
               <p class="card-text">Rede Credenciada</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="mx-auto btn-group">
-                  <button
-                    type="button"
-                    class="px-5 btn btn-sm btn-secondary"
-                  >
+                  <button type="button" class="px-5 btn btn-sm btn-secondary">
                     <a href="/lista-medicos" class="button">Consultar</a>
                   </button>
                 </div>
@@ -430,10 +444,7 @@
               <p>Rede Não Credenciada</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="mx-auto btn-group">
-                  <button
-                    type="button"
-                    class="px-5 btn btn-sm btn-secondary"
-                  >
+                  <button type="button" class="px-5 btn btn-sm btn-secondary">
                     Marcar
                   </button>
                 </div>
