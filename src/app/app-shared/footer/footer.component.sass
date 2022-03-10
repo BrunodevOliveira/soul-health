@@ -1,44 +1,38 @@
 @import '../../../SASS/main'
 
 footer
-  background-color: $bg-color
+  background-color: $primary-color
   font-family: $fonte-primary
 
 .container
-  color: #E7FEFC
+  color: $text-color-light
+  h6
+    color: $text-color-light
   i
+    color: $terciary-color
     padding-right: 0.5rem
 
 .social-media
   padding-bottom: 0
   i
-    color:#E7FEFC
-    &:hover
-      color: $text-color-light
+    @include icon-light-footer
 
 #copyright
   background-color: rgba(0, 0, 0, 0.05)
-  color: #E7FEFC
+  color: $text-color-secondary
   a
-    color: #E7FEFC
-    text-decoration: none
-    &:hover
-      color: $text-color-light
+    @include link-footer
 
 #products
   p
+    @include link-footer
     a
-      color: #E7FEFC
       text-decoration: none
     i
-    &:hover
-      color: $text-color-light
-
-#bg
-  color: $primary-color
+      color: $text-color-secondary
 
 #img
-  color: #E7FEFC
+  color: $text-color-secondary
   a
     img
       width: 90px
@@ -50,7 +44,7 @@ footer
       top: 0
       &:hover
         top: -4px
-        box-shadow: -4px 4px 4px #E7FEFC
+        box-shadow: -4px 4px 4px $text-color-secondary
         transition: .2s ease-in-out
         opacity: 0.9
       &:focus

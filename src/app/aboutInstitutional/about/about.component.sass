@@ -1,9 +1,11 @@
+@import '../../../SASS/main'
+
 .background
   background-color: rgb(140 152 164 / 7%)
   width: 100vw
 
 .nav-item
-  background-color: #ffff
+  background-color: $bg-color-light
   border-radius: 5px
 
 .nav-link
@@ -12,8 +14,8 @@
   color: #292828
 
 .nav-link.active
-  background-color: #279F86
-  $text-color-light: #fff
+  background-color: $bg-color-primary
+  color: $text-color-light
 
 // Media queries
 @media (max-width: 500px)
