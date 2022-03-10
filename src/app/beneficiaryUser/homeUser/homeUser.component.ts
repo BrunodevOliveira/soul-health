@@ -10,13 +10,13 @@ import { LogService } from 'src/app/authentication/services/log.service';
 })
 export class HomeUserComponent implements OnInit {
 
-  user: any = {
+  user: any = [{
     name: '',
     cpf: '',
     phone: '',
     email:'',
     password:''
-  }
+  }]
 
 
   constructor(private router: Router,
