@@ -1,88 +1,138 @@
-
 <div class="header-navbar mb-3">
   <div class="header-social-media">
     <ul>
       <li>
-        <a href="#">
+        <a href="https://www.instagram.com/">
           <i class="fab fa-facebook-f"></i>
         </a>
       </li>
       <li>
-        <a href="#">
+        <a href="http://twitter.com/">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
       <li>
-        <a href="#">
+        <a href="https://www.instagram.com/">
           <i class="fab fa-instagram"></i>
         </a>
       </li>
       <li>
-        <a href="#">
+        <a href="https://www.whatsapp.com/?lang=pt_br">
           <i class="fa-brands fa-whatsapp"></i>
         </a>
       </li>
     </ul>
   </div>
 
-  <div class="listCenter ">
-    <ul class="nav nav-pills nav-fill" >
+  <div class="listCenter">
+    <ul class="nav nav-pills nav-fill">
       <li class="nav-item">
         <a class="nav-link" href="#"><b> Ligue agora: </b>21 9999-9999</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#"><b>E-mail: </b>contato@soulhealth.com.br</a>
+        <a class="nav-link" href="#"
+          ><b>E-mail: </b>contato@soulhealth.com.br</a
+        >
       </li>
     </ul>
   </div>
 
   <!-- Botão de usuário -->
   <div class="listRight">
-      <ng-container *ngIf="!log.loggedIn(); else loggedIn">
-        <ul class="nav nav-pills nav-fill" >
-          <li class="nav-item">
-            <a routerLink="/login" class="btn btn-success" > <i class="bi bi-person-fill"> </i>Entrar</a>
-          </li>
-        </ul>
+    <ng-container *ngIf="!log.loggedIn(); else loggedIn">
+      <ul class="nav nav-pills nav-fill">
+        <li class="nav-item">
+          <a routerLink="/login" class="btn btn-success">
+            <i class="bi bi-person-fill"> </i>Entrar</a
+          >
+        </li>
+      </ul>
     </ng-container>
     <ng-template #loggedIn>
-      <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+      <a
+        class="btn btn-secondary dropdown-toggle"
+        href="#"
+        role="button"
+        id="dropdownMenuLink"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
         <i class="fa-solid fa-user"></i>
       </a>
       <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-        <li><a class="dropdown-item" routerLink="/home-beneficiario">Minha página</a></li>
-        <li><a class="dropdown-item" routerLink="/login" (click)="logoutservice.logout()"><i class="fa-solid fa-power-off me-3"></i>Sair</a></li>
+        <li>
+          <a class="dropdown-item" routerLink="/home-beneficiario"
+            >Minha página</a
+          >
+        </li>
+        <li>
+          <a
+            class="dropdown-item"
+            routerLink="/login"
+            (click)="logoutservice.logout()"
+            ><i class="fa-solid fa-power-off me-3"></i>Sair</a
+          >
+        </li>
       </ul>
     </ng-template>
-
   </div>
 </div>
-
 
 <header>
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid">
-      <div class="fancy-border"> <!--Imagem dentro da forma geométrica-->
+      <div class="fancy-border">
+        <!--Imagem dentro da forma geométrica-->
         <a class="d-none d-sm-flex" href="">
-          <img src="../../../assets/img-logo/logoPrincipalFinal.png"  alt="Logo" class="logomd">
+          <img
+            src="../../../assets/img-logo/logoPrincipalFinal.png"
+            alt="Logo"
+            class="logomd"
+          />
         </a>
         <a class="d-sm-none d-flex" href="">
-          <img src="../../../assets/img-logo/logoSecundaria.png" alt="Logo" class="logosm">
+          <img
+            src="../../../assets/img-logo/logoSecundaria.png"
+            alt="Logo"
+            class="logosm"
+          />
         </a>
       </div>
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="z-index: 100;">
+      <div
+        class="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel"
+        style="z-index: 100"
+      >
         <div class="offcanvas-header">
           <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-            <img src="../../../assets/img-logo/logoPrincipalFinal.png"  width="300px" alt="Logo" id="logo-offcanvas">
+            <img
+              src="../../../assets/img-logo/logoPrincipalFinal.png"
+              width="300px"
+              alt="Logo"
+              id="logo-offcanvas"
+            />
           </h5>
-          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <button
+            type="button"
+            class="btn-close text-reset"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
         </div>
         <div class="offcanvas-body">
           <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
-            <li class="nav-item ">
+            <li class="nav-item">
               <a class="nav-link" href="">Home</a>
             </li>
             <li class="nav-item">
@@ -100,13 +150,3 @@
     </div>
   </nav>
 </header>
-
-
-
-
-
-
-
-
-
-
