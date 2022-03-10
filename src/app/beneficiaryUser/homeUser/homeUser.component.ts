@@ -31,7 +31,7 @@ export class HomeUserComponent implements OnInit {
     private logservice: LogService,
     private consultservice: ConsultService) { }
 
-activeTab: string = 'saudenatela';
+activeTab: string = 'planos';
 
   handleActiveTab(tab:string){
     this.activeTab = tab;
