@@ -16,7 +16,6 @@ export class HomeUserComponent implements OnInit {
     cpf: '',
     phone: '',
     email:'',
-    password:''
   }]
 
   consult:any = [{
@@ -83,4 +82,14 @@ activeTab: string = 'saudenatela';
   }
 
 
+
+  updateUser() {
+    const userIdent = <any> this.logservice.UserIdent()
+    const userId = userIdent.id
+
+    this.beneficierservice.updateUser(userId, this.user).subscribe(res=> {
+      this.user = res
+    }, err=> console.log(err))
+    this.router.navigate(['/home-beneficiario'])
+  }
 }
