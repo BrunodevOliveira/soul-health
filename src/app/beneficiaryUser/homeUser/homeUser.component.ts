@@ -44,8 +44,7 @@ activeTab: string = 'planos';
 
   }
 
-
-
+// metodas para manipular usuarios
   identUser(){
     const userIdent = <any> this.logservice.UserIdent();
     const userId = userIdent.id
@@ -70,28 +69,38 @@ activeTab: string = 'planos';
 
   }
 
-  getconsult(){
-
-    const userIdent = <any> this.logservice.UserIdent();
-    const userEmail = userIdent.email
-    this.consultservice.getconsult(userEmail).subscribe(res=>{
-      this.consult = res
-    }, err=> console.log(err)
-    )
-
-  }
-
-
-
   updateUser() {
     const userIdent = <any> this.logservice.UserIdent()
     const userId = userIdent.id
 
     this.beneficierservice.updateUser(userId, this.user).subscribe(res=> {
       this.user = res
-      location.reload()
+      this.identUser()
+      //location.reload()
     }, err=> console.log(err))
 
   }
+// metodas para manipular consultas
+getconsult(){
+
+  const userIdent = <any> this.logservice.UserIdent();
+  const userEmail = userIdent.email
+  this.consultservice.getconsult(userEmail).subscribe(res=>{
+    this.consult = res
+  }, err=> console.log(err)
+  )
+
+}
+
+  deleteConsult(id:string){
+
+    this.consultservice.deleteconsult(id).subscribe(res=>{
+      this.getconsult();
+    }, err=>console.log(err))
+
+}
+
+
+
 }
 

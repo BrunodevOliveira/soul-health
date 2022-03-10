@@ -16,5 +16,12 @@ export class ConsultService {
     return this.http.get(`${this.url}/showconsults/${email}`)
   }
 
+  deleteconsult(id:string){
+
+  return this.http.delete(`${this.url}/deleteconsult/${id}`)
+
+  }
+
+
 
 }
