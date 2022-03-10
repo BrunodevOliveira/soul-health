@@ -18,6 +18,8 @@
 df-messenger
   --df-messenger-button-titlebar-color: $text-color-light
 
+  --df-messenger-button-titlebar-color: #fff
+  --df-messenger-button-titlebar-font-color: #6c757d
 a
   color: $text-color-primary
 
@@ -35,3 +37,24 @@ a
   border-bottom: 2px dotted
   margin: 0 5px 5px
   min-width: 70px
+
+.carousel
+  margin-bottom: 4rem
+  position: relative
+
+.text-left
+  text-align: left
+
+.text
+  font-size: 20px
+
+.row
+  --bs-gutter-x: 0
+
+@media (max-width: 719px)
+  #img
+    display: none
+
+@media (max-width: 1250px)
+  .carousel
+    display: none

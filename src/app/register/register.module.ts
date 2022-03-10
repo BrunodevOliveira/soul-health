@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 
 import { SharedModule } from '../app-shared/shared-module/shared.module';
 import { RegisterRoutingModule } from './register-routing.module';
+import { NgxMaskModule } from 'ngx-mask'
 
 
 @NgModule({
@@ -12,7 +13,8 @@ import { RegisterRoutingModule } from './register-routing.module';
     CommonModule,
     SharedModule,
     FormsModule,
-    RegisterRoutingModule
+    RegisterRoutingModule,
+    NgxMaskModule.forChild()
   ]
 })
 export class RegisterModule { }
