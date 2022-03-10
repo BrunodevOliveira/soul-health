@@ -22,34 +22,10 @@ hr
   margin-top: 78px
 
 .btn-primary
-  background-color: $primary-color
-  border-color: $primary-color
-  color: #fff
-  font-size: 16px
-  font-weight: bold
-  padding: 10px 20px
-  border-radius: 5px
-  margin-top: 20px
-  margin-bottom: 20px
-  &:hover
-    background-color: #fff
-    color: $primary-color
-    border-color: $primary-color
+  @include btn-primary
 
 .btn-secondary
-  background-color: $text-color
-  border-color: $text-color
-  color: #fff
-  font-size: 16px
-  font-weight: bold
-  padding: 10px 20px
-  border-radius: 5px
-  margin-top: 20px
-  margin-bottom: 20px
-  &:hover
-    background-color: #fff
-    color: $text-color
-    border-color: $text-color
+  @include btn-secondary
 
 @media (min-width: 1624px)
   .col-12

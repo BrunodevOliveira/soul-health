@@ -1,23 +1,34 @@
+@import '../../../SASS/main'
+
+.btn-primary
+  @include btn-primary
+
+.btn-secondary
+  @include btn-secondary
+
 .button
   text-decoration: none
-  color: #6c757d
+  color: $text-color-light
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out
 
   &:hover
-    color: #fff
+    color: $terciary-color
+    background: transparent
 
 df-messenger
+  --df-messenger-button-titlebar-color: $text-color-light
+
   --df-messenger-button-titlebar-color: #fff
   --df-messenger-button-titlebar-font-color: #6c757d
 a
-  color: #086e58
+  color: $text-color-primary
 
   &:hover
-    background-color: #8d8e8f
-    color: #fff
+    background-color: $terciary-color
+    color: $text-color-primary
 
 .letra
-  color: #fff
+  color: $text-color-light
 
 .phonesAccordions__div-phones-points
   flex: 1 1

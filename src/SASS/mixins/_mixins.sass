@@ -9,3 +9,70 @@
   max-width: $container-width
   padding: 1rem 0
   margin: 0 auto
+
+@mixin btn-primary
+  background-color: $primary-color
+  border-color: $primary-color
+  color: $text-color-light
+  font-size: 16px
+  font-weight: bold
+  padding: 10px 20px
+  border-radius: 5px
+  margin-top: 20px
+  margin-bottom: 20px
+  &:hover
+    background-color: $bg-color-light
+    color: $primary-color
+    border-color: $primary-color
+
+@mixin btn-secondary
+  background-color: $terciary-color
+  border-color: $terciary-color
+  color: $text-color-light
+  font-size: 16px
+  font-weight: bold
+  padding: 10px 20px
+  border-radius: 5px
+  margin-top: 20px
+  margin-bottom: 20px
+
+  &:hover
+    background-color: $bg-color-light
+    color: $terciary-color
+    border-color: $terciary-color
+
+@mixin btn-success
+  max-width: 200px
+  background-color: $terciary-color
+  border: none
+  color: $text-color-light
+  padding: 0.5rem 1rem
+  margin-right: 2rem
+  text-align: center
+  text-decoration: none
+  display: inline-block
+  font-size: 1rem
+  border-radius: 5px
+
+  &:hover
+    background-color: $primary-color
+    color: $text-color-secondary
+
+@mixin icon-navbar
+  color: $terciary-color
+  font-size: 1.1rem
+  &:hover
+    color: $primary-color
+
+@mixin link-footer
+  color: $text-color-light
+  text-decoration: none
+  &:hover
+    color: $terciary-color
+
+@mixin icon-light-footer
+  color: $terciary-color
+  &:hover
+    color: $text-color-secondary
+
+

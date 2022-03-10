@@ -7,9 +7,11 @@
 // Classes
 
 .header-navbar
+  // background-color: $bg-color-secondary
   display: flex
   justify-content: space-between
   flex-wrap: wrap
+  height: 60px
   @include container-navbar
 
   .header-social-media
@@ -20,49 +22,37 @@
     li
       margin: 0 1.1rem
       a
-        color: $text-color
+        color: $terciary-color
         font-size: 1.2rem
         &:hover
           color: $primary-color
 
 .listCenter
   font-family: $fonte-primary
+  @include flex-center
   a
-    color: $text-color
-    font-size: 1.1rem
-    &:hover
-      color: $primary-color
+    @include icon-navbar
 
 .listRight
   font-family: $fonte-primary
   @include flex-center
+  .btn
+    @include btn-secondary
+    margin: 0
+
 
 .btn-success
-  max-width: 200px
-  background-color: $text-color
-  border: none
-  color: #fff
-  padding: 0.5rem 1rem
-  margin-right: 2rem
-  text-align: center
-  text-decoration: none
-  display: inline-block
-  font-size: 1rem
-  border-radius: 5px
-
-  &:hover
-    background-color: $primary-color
-    color: #E7FEFC
+  @include btn-success
 
 .navbar
   background: $primary-color
   height: 90px
 
   i
-    color: #E7FEFC
+    color: $terciary-color
     font-size: 1.2rem
     &:hover
-      color: #fff
+      color: $primary-color
       text-decoration: none
 
       padding: 0
@@ -70,9 +60,9 @@
     font-family: $fonte-primary
     font-size: 1.1rem
     padding: 0.5rem 1rem
-    color: #E7FEFC
+    color: $text-color-light
     &:hover
-      color: #fff
+      color: $terciary-color
       text-decoration: none
 
 .container-fluid
@@ -84,17 +74,20 @@
 .navbar-toggler .navbar-toggler-icon
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(231,254,252,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")
 
+// .offcanvas-header
+//   background-color: $bg-color-secondary
+
 .offcanvas-body
   background: $offcanvas-color
 
 
 .navbar-toggler
-  border: #E7FEFC solid 1px
+  border: $text-color-secondary solid 1px
   &:focus
-    color: #E7FEFC
+    color: $text-color-secondary
 
 .fancy-border
-  border-top: 90px solid #fff
+  border-top: 90px solid $bg-color-light
   border-left: 0px solid transparent
   border-right: 80px solid transparent
   height: 90px
@@ -104,50 +97,39 @@
     width: 200px
     position: absolute
     top: -145px
-    left: 30px
+    left: 10px
   .logosm
-    width: 70px
+    width: 100px
     position: absolute
-    top: -75px
+    top: -100px
     left: 40%
 
 
-
-// Media queries
+// Media queries ( não terminamos a media query da img navbar)
 
 @media (max-width: 871px)
   .listCenter
     display: none
 
+@media (min-width: 501px)
+  .logomd
+    width: 200px
+    position: absolute
+    top: -140px
+    left: 30px
+
 @media (max-width: 500px)
-  .fancy-border
-    border-top: 90px solid #fff
-    border-left: 0px solid transparent
-    border-right: 80px solid transparent
-    height: 90px
-    width: 150px
-    position: relative
-    .logomd
-      width: 200px
-      position: absolute
-      top: -140px
-      left: 30px
-    .logosm
-      width: 70px
-      position: absolute
-      top: -75px
-      left: 30%
-    img
-      position: absolute
-      top: -65px
-      left: 15px
+  .logosm
+    width: 90px
+    position: absolute
+    top: -95px
+    left: 10%
+
 
 @media (max-width: 991px)
   .offcanvas
     margin-top: -50px
-
-
+    z-index: 99999 !important
     .offcanvas-body
-      margin-top: -50px
-
+     margin-top: -50px
 
