@@ -6,6 +6,20 @@
         <li class="nav-item col-10 col-sm-6 col-md-6 col-lg-3">
           <a
             class="nav-link active ms-1"
+            id="planos-tab"
+            data-toggle="pill"
+            role="tab"
+            aria-selected="false"
+            [ngClass]="{ active: activeTab === 'planos' }"
+            (click)="handleActiveTab('planos')"
+            [routerLink]="['./']"
+            fragment="planos"
+            >Planos e Benefícios</a
+          >
+        </li>
+        <li class="nav-item col-10 col-sm-6 col-md-6 col-lg-3">
+          <a
+            class="nav-link ms-1"
             id="saudenatela-tab"
             data-toggle="pill"
             role="tab"
@@ -31,20 +45,7 @@
             >Meus Dados</a
           >
         </li>
-        <li class="nav-item col-10 col-sm-6 col-md-6 col-lg-3">
-          <a
-            class="nav-link ms-1"
-            id="planos-tab"
-            data-toggle="pill"
-            role="tab"
-            aria-selected="false"
-            [ngClass]="{ active: activeTab === 'planos' }"
-            (click)="handleActiveTab('planos')"
-            [routerLink]="['./']"
-            fragment="planos"
-            >Planos e Benefícios</a
-          >
-        </li>
+
         <li class="nav-item col-10 col-sm-6 col-md-6 col-lg-3">
           <a
             class="nav-link ms-1"
