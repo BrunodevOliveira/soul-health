@@ -1,3 +1,4 @@
+import { ConsultService } from '../homeUser/consultservice/consult.service';
 import { BeneficiaryServiceService } from './beneficiaryService/beneficiary-service.service';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
@@ -18,11 +19,17 @@ export class HomeUserComponent implements OnInit {
     password:''
   }]
 
+  consult:any = [{
+    email: '',
+    specialty: '',
+    date: ''
+  }]
+
 
   constructor(private router: Router,
     private beneficierservice: BeneficiaryServiceService,
     private logservice: LogService,
-) { }
+    private consultservice: ConsultService) { }
 
 activeTab: string = 'saudenatela';
 
@@ -34,6 +41,7 @@ activeTab: string = 'saudenatela';
   ngOnInit(): void {
 
     this.identUser()
+    this.getconsult()
 
   }
 
@@ -60,6 +68,17 @@ activeTab: string = 'saudenatela';
     }, err=>console.log(err))
     this.router.navigate(['/app-app-home'])
     localStorage.removeItem('token');
+
+  }
+
+  getconsult(){
+
+    const userIdent = <any> this.logservice.UserIdent();
+    const userEmail = userIdent.email
+    this.consultservice.getconsult(userEmail).subscribe(res=>{
+      this.consult = res
+    }, err=> console.log(err)
+    )
 
   }
 
