@@ -6,6 +6,20 @@
         <li class="nav-item col-10 col-sm-6 col-md-6 col-lg-3">
           <a
             class="nav-link active ms-1"
+            id="planos-tab"
+            data-toggle="pill"
+            role="tab"
+            aria-selected="false"
+            [ngClass]="{ active: activeTab === 'planos' }"
+            (click)="handleActiveTab('planos')"
+            [routerLink]="['./']"
+            fragment="planos"
+            >Planos e Benefícios</a
+          >
+        </li>
+        <li class="nav-item col-10 col-sm-6 col-md-6 col-lg-3">
+          <a
+            class="nav-link ms-1"
             id="saudenatela-tab"
             data-toggle="pill"
             role="tab"
@@ -31,20 +45,7 @@
             >Meus Dados</a
           >
         </li>
-        <li class="nav-item col-10 col-sm-6 col-md-6 col-lg-3">
-          <a
-            class="nav-link ms-1"
-            id="planos-tab"
-            data-toggle="pill"
-            role="tab"
-            aria-selected="false"
-            [ngClass]="{ active: activeTab === 'planos' }"
-            (click)="handleActiveTab('planos')"
-            [routerLink]="['./']"
-            fragment="planos"
-            >Planos e Benefícios</a
-          >
-        </li>
+
         <li class="nav-item col-10 col-sm-6 col-md-6 col-lg-3">
           <a
             class="nav-link ms-1"
@@ -115,15 +116,81 @@
           <li class="list-group-item">CPF <p class="text-muted">{{user.cpf}}</p></li>
           <li class="list-group-item">Phone <p class="text-muted">{{user.phone}}</p></li>
           <li class="list-group-item">Email <p class="text-muted">{{user.email}}</p></li>
-          <li class="list-group-item">Senha <input type="password" value="senhaprotegida" disabled></li>
           <li class="list-group-item d-flex justify-content-end">
-            <button type="button" class="btn btn-success me-2">Alterar Dados</button>
-            <button type="button" class="btn btn-danger"  (click)="deleteUser()">Excluir conta</button>
+            <button type="button" class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#exampleModal1">Alterar Dados</button>
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">Excluir conta</button>
           </li>
         </ul>
-      </div>
-      </div>
+        <!-- Modal de confirmação para excluir -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Deseja Excluir a conta?</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <!-- <div class="modal-body">
+                <p>Modal body text goes here.</p>
+              </div> -->
+              <div class="modal-footer mx-auto">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Não</button>
+                <button type="button" class="btn btn-primary"  (click)="deleteUser()">Sim</button>
+              </div>
+            </div>
+          </div>
+        </div>
 
+        <!-- Modal para editar dados -->
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Editar campos</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form (submit)="updateUser()">
+                  <div>
+                    <label for="nome_edit">Nome</label>
+                    <input type="text" name="nome_edit" id="nome_edit" class="form-control form-control-sm" value="{{user.name}}"
+                    [(ngModel)]="user.name" />
+                  </div>
+                  <div>
+                    <label for="cpf_edit">CPF</label>
+                    <input type="text" name="cpf_edit" id="cpf_edit"  class="form-control form-control-sm" value="{{user.cpf}}"
+                    [(ngModel)]="user.cpf"
+                    />
+                  </div>
+                  <div>
+                    <label for="tel_edit">Telefone</label>
+                    <input type="text" name="tel_edit" id="tel_edit" class="form-control form-control-sm" value="{{user.phone}}"
+                    [(ngModel)]="user.phone"
+                    />
+                  </div>
+                  <div>
+                    <label for="email_edit">Email</label>
+                    <input type="text" name="email_edit" id="email_edit" class="form-control form-control-sm" value="{{user.email}}"
+                    [(ngModel)]="user.email"
+                    />
+                  </div>
+                  <!-- <div>
+                    <label for="senha_edit">Senha</label>
+                    <input type="password" name="senha_edit" id="senha_edit" class="form-control form-control-sm"
+                    [(ngModel)]="user.password"
+                    />
+                  </div> -->
+                  <div class="modal-footer mx-auto">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-primary">Atualizar</button>
+                  </div>
+                </form>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
 
       <!-- Planos e Benefícios -->
 
@@ -310,12 +377,30 @@
         aria-labelledby="agendamentos-tab"
         [ngClass]="{ active: activeTab === 'agendamentos' }"
       >
-        <p>
-          Lorem, ipsum 3 dolor sit amet consectetur adipisicing elit. Assumenda
-          repellat culpa perspiciatis, quis, reiciendis beatae fugit accusamus
-          asperiores cum laudantium magnam numquam fugiat quas ratione sit ab
-          pariatur architecto perferendis.
-        </p>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Especialidade</th>
+              <th scope="col">Data</th>
+              <th scope="col">Ações</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let consults of consult">
+              <td>{{ consults.specialty }}</td>
+              <td>{{ consults.date }}</td>
+              <td class="d-flex justify-content-start">
+                <button type="button" class="btn btn-success me-2">
+                  Alterar Consulta
+                </button>
+                <button type="button" class="btn btn-danger">
+                  Excluir Consulta
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
         <div class="container marketing"></div>
       </div>
     </div>
@@ -342,10 +427,7 @@
               <p class="card-text">Ambulatorial e Hospitalar</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="mx-auto btn-group">
-                  <button
-                    type="button"
-                    class="px-5 btn btn-sm btn-secondary"
-                  >
+                  <button type="button" class="px-5 btn btn-sm btn-secondary">
                     Marcar
                   </button>
                 </div>
@@ -366,11 +448,8 @@
               <p class="card-text">Boleto Atualizado</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="mx-auto btn-group">
-                  <button
-                    type="button"
-                    class="px-5 btn btn-sm btn-secondary"
-                  >
-                    Gerar
+                  <button type="button" class="px-5 btn btn-sm btn-secondary">
+                    <a href="/boleto" class="button"> Gerar </a>
                   </button>
                 </div>
               </div>
@@ -390,10 +469,7 @@
               <p class="card-text">Rede Credenciada</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="mx-auto btn-group">
-                  <button
-                    type="button"
-                    class="px-5 btn btn-sm btn-secondary"
-                  >
+                  <button type="button" class="px-5 btn btn-sm btn-secondary">
                     <a href="/lista-medicos" class="button">Consultar</a>
                   </button>
                 </div>
@@ -419,6 +495,9 @@
                     class="px-5 btn btn-sm btn-secondary"
                   >
                   <a href="/refund" class="button">Solicitar</a>
+                  </button>
+                  <button type="button" class="px-5 btn btn-sm btn-secondary">
+                    Marcar
                   </button>
                 </div>
               </div>
