@@ -33,6 +33,10 @@ const routes: Routes = [
 {
     path: 'lista-medicos',
     loadChildren: () => import('./doctors/doctors.module').then(c => c.DoctorsModule)
+  },
+{
+    path: 'boleto', canActivate: [AuthguardGuard],
+    loadChildren: () => import('./ticket/ticket.module').then(c => c.TicketModule)
   }
 
 ];
