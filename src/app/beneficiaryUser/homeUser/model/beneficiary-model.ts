@@ -4,7 +4,4 @@ export interface BeneficiaryModel {
   cpf: '',
   phone: '',
   email:'',
-  password:''
-
-
 }
