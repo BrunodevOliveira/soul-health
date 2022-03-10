@@ -100,21 +100,25 @@
           </div>
         </div>
       </div>
-      <!-- Meus dados -->
-      <div
-        class="tab-pane show"
-        id="perfil"
-        role="tabpanel"
-        aria-labelledby="perfil-tab"
-        [ngClass]="{ active: activeTab === 'perfil' }"
-      >
-        <p>
-          Lorem ipsum 1, dolor sit amet consectetur adipisicing elit.
-          Exercitationem optio ad ex perspiciatis consequatur temporibus. Ab
-          explicabo error expedita ut facilis officiis. Doloremque nesciunt
-          facere dolor expedita rem sapiente recusandae!
-        </p>
+      <!-- Inicio Meus dados -->
+      
+      <h2 class="text-center">Dados Pessoais</h2>
+      <div class="card m-auto" style="width: 25rem;">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item ">Nome <p class="text-muted"> {{user.name}} </p></li>
+          <li class="list-group-item">CPF <p class="text-muted">{{user.cpf}}</p></li>
+          <li class="list-group-item">Phone <p class="text-muted">{{user.phone}}</p></li>
+          <li class="list-group-item">Email <p class="text-muted">{{user.email}}</p></li>
+          <li class="list-group-item">Senha <input type="password" value="senhaprotegida" disabled></li>
+          <li class="list-group-item d-flex justify-content-end">
+            <button type="button" class="btn btn-success me-2">Alterar Dados</button>
+            <button type="button" class="btn btn-danger"  (click)="deleteUser()">Excluir conta</button>
+          </li>
+        </ul>
       </div>
+
+
+
       <!-- Planos e Benefícios -->
       <div
         class="tab-pane col-lg-12 show"
