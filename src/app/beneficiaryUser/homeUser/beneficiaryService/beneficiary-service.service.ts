@@ -1,4 +1,4 @@
-import { BeneficiaryModel } from './../../../../../../modelo/src/app/beneficiaryUser/homeUser/model/beneficiary-model';
+import { BeneficiaryModel } from '../model/beneficiary-model';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';

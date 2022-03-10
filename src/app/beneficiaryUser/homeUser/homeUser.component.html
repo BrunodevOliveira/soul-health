@@ -101,7 +101,13 @@
         </div>
       </div>
       <!-- Inicio Meus dados -->
-      
+      <div
+      class="tab-pane col-lg-12 m-auto show"
+      id="perfil"
+      role="tabpanel"
+      aria-labelledby="perfil-tab"
+      [ngClass]="{ active: activeTab === 'perfil' }"
+    >
       <h2 class="text-center">Dados Pessoais</h2>
       <div class="card m-auto" style="width: 25rem;">
         <ul class="list-group list-group-flush">
@@ -116,10 +122,11 @@
           </li>
         </ul>
       </div>
-
+      </div>
 
 
       <!-- Planos e Benefícios -->
+
       <div
         class="tab-pane col-lg-12 show"
         id="planos"
