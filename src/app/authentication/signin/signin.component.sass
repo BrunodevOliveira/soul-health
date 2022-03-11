@@ -11,3 +11,45 @@
 
 .attempts
   color: red
+
+h3
+  @include subtitles_h3
+
+label
+  color: $text-color-primary
+  margin-bottom: 0.2rem
+  font-weight: bold
+  font-size: 0.8rem
+
+input
+  border: 1px solid $primary-color
+  border-radius: 5px
+  padding: 10px
+
+  &:focus
+    border: 1px solid $primary-color
+
+span
+  background-color: $primary-color
+  color: $terciary-color
+  border: 1px solid $primary-color
+
+p
+  color: $text-color-primary
+  a
+    color: $primary-color
+    font-weight: bold
+    text-decoration: none
+    &:hover
+      color: $terciary-color
+
+
+.btn-primary
+  @include btn-primary
+
+#loginSocial
+  a
+    margin: 0px 15px 0px 15px
+    
+
+

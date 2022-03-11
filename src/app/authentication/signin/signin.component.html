@@ -1,20 +1,23 @@
 <main class="container">
-  <div class="row justify-content-center my-5">
+  <div class="row justify-content-center my-3">
     <div
-      class="d-none d-sm-block col-md-12 col-lg-7 text-center align-self-center"
+      class="d-none d-sm-block col-md-12 col-lg-8 text-center align-self-center" id="imgLogin"
     >
       <img
-        src="../../assets/shutterstock_426687286.jpg"
+      id="imgbackground"
+        src="../../../assets/images/backgrondLoginLogo5.png"
+        width="1000px"
         alt="cadastro imagem"
         class="img-fluid rounded"
       />
     </div>
 
-    <div class="col-md col-lg-5 align-self-center my-3">
+    <div class="col-md-6 col-lg-4 align-self-center my-2" id="formLogin">
       <form #f="ngForm" class="needs-validation" method="post" novalidade (submit)="signIn()">
-        <h5 class="text-center">Faça seu login</h5>
 
-        <hr style="width: 50%; margin: 15px auto" />
+        <h3 class="text-center">Login<img SRC="../../../assets/img-logo/logoPrincipalFinal_corte.png" width="200px"></h3>
+
+        <!-- <hr style="width: 50%; margin: 15px auto" /> -->
 
         <div class="mt-2">
           <label for="email" class="form-label">Email</label>
@@ -29,7 +32,7 @@
               aria-describedby="inputGroup-sizing-lg"
               id="email"
               #email="ngModel"
-              placeholder="Email"
+              placeholder="exemplo@email.com"
               name="email"
               required
               [email]="true"
@@ -56,7 +59,7 @@
               name="password"
               id="password"
               class="form-control user-select-none"
-              placeholder="Senha"
+              placeholder="Digite sua senha"
               name="password"
               #password="ngModel"
               required
@@ -85,13 +88,13 @@
         </div>
         <span *ngIf="attempts > 0">Número de tentativas de login: <strong class="attempts">{{attempts}}</strong></span>
 
-        <p class="text-center text-muted mt-3">
+        <p class="text-center mt-3">
           Ainda não tem conta? <a routerLink="/cadastro">Cadastre-se aqui</a>
         </p>
         <hr style="width: 50%; margin: 15px auto" />
-        <p class="text-center text-muted mt-3">Ou entre com:</p>
+        <p class="text-center mt-3">Ou entre com:</p>
 
-        <div class="d-flex justify-content-evenly">
+        <div class="d-flex justify-content-center" id="loginSocial">
           <a href="https://pt-br.facebook.com/" target="_blank">
             <svg
               xmlns="http://www.w3.org/2000/svg"
