@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
+import { Consult } from '../model/consult'
 
 @Injectable({
   providedIn: 'root'
@@ -19,6 +20,12 @@ export class ConsultService {
   deleteconsult(id:string){
 
   return this.http.delete(`${this.url}/deleteconsult/${id}`)
+
+  }
+
+  updateConsult(id:string, consult: any ){
+
+    return this.http.put(`${this.url}/updateconsult/${id}`, consult)
 
   }
 
