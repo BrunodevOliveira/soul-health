@@ -35,7 +35,7 @@ const routes: Routes = [
     loadChildren: () => import('./doctors/doctors.module').then(c => c.DoctorsModule)
   },
   {
-    path: 'refund', canActivate: [AuthguardGuard],
+    path: 'reembolso', canActivate: [AuthguardGuard],
     loadChildren: () => import('./refund/refund.module').then(c => c.RefundModule)
   },
 {
