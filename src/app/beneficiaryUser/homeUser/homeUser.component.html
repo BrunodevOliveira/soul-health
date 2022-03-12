@@ -175,6 +175,7 @@
                     Não
                   </button>
                   <button
+                    data-bs-dismiss="modal"
                     type="button"
                     class="btn btn-primary"
                     (click)="deleteUser()"
@@ -470,7 +471,7 @@
               <td>{{ consults.specialty }}</td>
               <td>{{ consults.date }}</td>
               <td class="d-flex justify-content-start">
-                <button type="button" class="btn btn-success btn-primary me-2">
+                <button type="button" class="btn btn-success btn-primary me-2" (click)="updateconsult(consults._id)">
                   Alterar Consulta
                 </button>
                 <button
@@ -484,8 +485,6 @@
             </tr>
           </tbody>
         </table>
-
-        <div class="container marketing"></div>
       </div>
     </div>
     <!-- Categorias de Planos de Saúde -->
