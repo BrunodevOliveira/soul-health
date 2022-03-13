@@ -22,7 +22,6 @@ export class BeneficiaryServiceService {
   updateUser(id:string, user:BeneficiaryModel){
 
     return this.http.post(`${this.url}/update/${id}`, user)
-
   }
 
   deleteUser(id:string){

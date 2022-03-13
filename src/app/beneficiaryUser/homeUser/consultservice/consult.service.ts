@@ -1,7 +1,8 @@
+import { Consult } from './../model/consult';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
-import { Consult } from '../model/consult'
+
 
 @Injectable({
   providedIn: 'root'
@@ -23,10 +24,9 @@ export class ConsultService {
 
   }
 
-  updateConsult(id:string, consult: any ){
+  updateConsult(id:string, consult: Consult ){
 
-    return this.http.put(`${this.url}/updateconsult/${id}`, consult)
-
+    return this.http.post(`${this.url}/updateconsult/${id}`,consult)
   }
 
 

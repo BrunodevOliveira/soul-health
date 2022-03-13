@@ -104,10 +104,7 @@ activeTab: string = 'planos';
   }
 
   updateconsult(id:string){
-    this.consultservice.updateConsult(id, this.consult).subscribe(res=>{
-
-    },
-    err=>console.log(err))
+    this.router.navigate(['/home-beneficiario/edit/'+id])
   }
 
 
