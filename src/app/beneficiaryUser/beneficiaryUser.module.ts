@@ -5,11 +5,13 @@ import { FormsModule } from '@angular/forms';
 import { SharedModule } from '../app-shared/shared-module/shared.module';
 import { BeneficiaryUserRoutingModule } from './beneficiaryUser-routing.module';
 import { HomeUserComponent } from './homeUser/homeUser.component';
+import { EditConsultComponent } from './homeUser/edit-consult/edit-consult.component';
 
 
 @NgModule({
   declarations: [
-    HomeUserComponent
+    HomeUserComponent,
+    EditConsultComponent
   ],
   imports: [
     CommonModule,

@@ -175,6 +175,7 @@
                     Não
                   </button>
                   <button
+                    data-bs-dismiss="modal"
                     type="button"
                     class="btn btn-primary"
                     (click)="deleteUser()"
@@ -384,7 +385,7 @@
         </div>
         <div class="row card-deck mb-3 text-center">
           <div class="card col-sm-12 col-md-12 col-lg-4 mr-1 mb-4 shadow-sm">
-            <div class="card-header">
+            <div class="card-header text-light">
               <h4 class="my-0 font-weight-normal">Individual</h4>
             </div>
             <div class="card-body">
@@ -399,13 +400,13 @@
                 <li>Suporte por email e telefone</li>
                 <li>Acesso ao centro de ajuda</li>
               </ul>
-              <button type="button" class="btn btn-lg btn-block btn-primary">
-                Cadastre-se de graça
+              <button type="button" class="btn btn-lg btn-block btn-secondary">
+                Quero esse!
               </button>
             </div>
           </div>
           <div class="card col-sm-12 col-md-12 col-lg-4 mr-1 mb-4 shadow-sm">
-            <div class="card-header">
+            <div class="card-header text-light">
               <h4 class="my-0 font-weight-normal">Familiar</h4>
             </div>
             <div class="card-body">
@@ -420,13 +421,13 @@
                 <li>Suporte por email e telefone</li>
                 <li>Acesso ao centro de ajuda</li>
               </ul>
-              <button type="button" class="btn btn-lg btn-block btn-primary">
-                Conhecer
+              <button type="button" class="btn btn-lg btn-block btn-secondary">
+                Quero esse!
               </button>
             </div>
           </div>
           <div class="card col-sm-12 col-md-12 col-lg-4 mb-4 shadow-sm">
-            <div class="card-header">
+            <div class="card-header text-light">
               <h4 class="my-0 font-weight-normal">Empresarial</h4>
             </div>
             <div class="card-body">
@@ -441,8 +442,8 @@
                 <li>Suporte por email e telefone</li>
                 <li>Acesso ao centro de ajuda</li>
               </ul>
-              <button type="button" class="btn btn-lg btn-block btn-primary">
-                Contate-nos
+              <button type="button" class="btn btn-lg btn-block btn-secondary">
+                Quero esse!
               </button>
             </div>
           </div>
@@ -470,7 +471,7 @@
               <td>{{ consults.specialty }}</td>
               <td>{{ consults.date }}</td>
               <td class="d-flex justify-content-start">
-                <button type="button" class="btn btn-success btn-primary me-2">
+                <button type="button" class="btn btn-success btn-primary me-2" (click)="updateconsult(consults._id)">
                   Alterar Consulta
                 </button>
                 <button
@@ -484,20 +485,17 @@
             </tr>
           </tbody>
         </table>
-
-        <div class="container marketing"></div>
       </div>
     </div>
     <!-- Categorias de Planos de Saúde -->
   </div>
 </section>
 <!-- Menu de acessos rápidos -->
-<section class="pt-5 text-center">
-  <h2 class="pb-4 fw-light">Acessos Rápidos</h2>
-
-  <div class="album py-5 bg-light">
-    <div class="container">
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+<section class="text-center">
+  <h2 class="pb-4">Acessos Rápidos</h2>
+  <div class="album">
+    <div class="container bg-light p-0">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
         <div class="col col-sm-6 col-md-6 col-lg-3">
           <div class="card shadow-sm">
             <img
@@ -505,7 +503,7 @@
               src="../../../assets/consulta.webp"
               alt="Marcar Consulta"
             />
-
+            <!-- Card 1 -->
             <div class="card-body">
               <h5>Marcar Consulta</h5>
               <p class="card-text">Ambulatorial e Hospitalar</p>
@@ -522,7 +520,7 @@
               src="../../../assets/boleto.jpg"
               alt="Gerar segunda via de boleto"
             />
-
+            <!-- Card 2 -->
             <div class="card-body">
               <h5>Boleto: 2ª via</h5>
               <p class="card-text">Boleto Atualizado</p>
@@ -544,6 +542,7 @@
               src="../../../assets/medicoscredenciados.jpg"
               alt="Médicos Credenciados"
             />
+            <!-- Card 3 -->
             <div class="card-body">
               <h5>Médicos</h5>
               <p class="card-text">Rede Credenciada</p>
@@ -564,7 +563,7 @@
               src="../../../assets/reemb.jpg"
               alt="Marcar Consulta"
             />
-
+            <!-- Card 4 -->
             <div class="card-body">
               <h5>Reembolso</h5>
               <p>Rede Não Credenciada</p>
@@ -582,9 +581,10 @@
     </div>
   </div>
 </section>
+
 <!-- Contatos -->
 <section>
-  <div class="col-10 col-sm-10 col-md-9 col-lg-8 m-auto py-5">
+  <div class="col-10 col-sm-10 col-md-9 col-lg-8 m-auto">
     <div class="accordion accordion-flush py-5" id="accordionFlushExample">
       <div class="accordion-item">
         <h2 class="accordion-header" id="flush-headingOne">

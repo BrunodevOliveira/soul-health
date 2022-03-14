@@ -28,8 +28,7 @@ export class SignupComponent implements OnInit {
 
   onSubmit(){
     this.signupService.signUp(this.user).subscribe(res => {
-      localStorage.setItem('token', res.token)
-      this.router.navigate(['/home-beneficiario'])
+      this.router.navigate(['/login'])
     },
     err=> {this.resValidation = err.error.message
       console.log(err)})
