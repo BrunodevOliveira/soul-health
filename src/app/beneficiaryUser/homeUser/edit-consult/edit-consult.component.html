@@ -1,24 +1,26 @@
 <form (submit)="updateconsult()">
-  <div>
-    <label for="nome_edit">Especialidade</label>
-    <input
-      type="text"
-      name="esp_edit"
-      id="esp_edit"
-      class="form-control form-control-sm"
-      [(ngModel)]="consult.specialty"
+  <div class="container d-flex flex-column">
+    <div class="col-12 mb-3">
+      <label for="nome_edit">Especialidade</label>
+      <input
+        type="text"
+        name="esp_edit"
+        id="esp_edit"
+        class="form-control form-control-sm"
+        [(ngModel)]="consult.specialty"
 
-    />
-  </div>
-  <div>
-    <label for="cpf_edit">Data de agendamento</label>
-    <input
-      type="text"
-      name="date_edit"
-      id="date_edit"
-      class="form-control form-control-sm"
-      [(ngModel)]="consult.date"
-    />
+      />
+    </div>
+    <div class="col-12 mb-3">
+      <label for="cpf_edit">Data de agendamento</label>
+      <input
+        type="text"
+        name="date_edit"
+        id="date_edit"
+        class="form-control form-control-sm"
+        [(ngModel)]="consult.date"
+      />
+    </div>
   </div>
   <div class="modal-footer mx-auto">
     <button
