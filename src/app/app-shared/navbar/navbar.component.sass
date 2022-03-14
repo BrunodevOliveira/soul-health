@@ -40,6 +40,10 @@
     @include btn-secondary
     margin: 0
     margin-right: 0.8rem
+    &:hover
+      background-color: $bg-color-light
+      color: $primary-color
+      border-color: $primary-color
 
 .btn-success
   @include btn-success
@@ -103,7 +107,7 @@
 
 // Media queries ( não terminamos a media query da img navbar)
 
-@media (max-width: 871px)
+@media (max-width: 920px)
   .listCenter
     display: none
 
