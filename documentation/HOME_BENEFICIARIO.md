@@ -14,7 +14,7 @@ Para acessar esta página na aplicação, o usuário precisará estar com seu lo
 
 ### 🔧 Instalação
 
-Instalações dos pacotes descritos no README.MD do projeto.
+Instalações dos pacotes descritos no <a href="/README.md">README.MD</a> do projeto.
 
 ## 📦 Desenvolvimento
 
@@ -28,7 +28,7 @@ Instalações dos pacotes descritos no README.MD do projeto.
  <img src="/documentation/assets/saudenatela.png">
 </li>
 
-<p>As outras 2 funcionalidades estão detalhadas das documentações abaixo:</p>
+<p>As outras 2 funcionalidades estão detalhadas nas documentações abaixo:</p>
 
 <li><a href="/documentation/MEUS_DADOS.md">Meus Dados</a></li>
 <li><a href="/documentation/MEUS_AGENDAMENTOS.md">Meus Agendamentos</a></li>
