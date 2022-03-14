@@ -1,23 +1,37 @@
 @import '../../../SASS/main'
 
+.jumbotron
+  color: $text-color-primary
+  span
+    font-weight: bold
+    color: $terciary-color
+
+
 .background
-  background-color: rgb(140 152 164 / 7%)
+  // background-color: rgb(140 152 164 / 7%)
   width: 100vw
 
-.nav-item
-  background-color: $bg-color-light
-  border-radius: 5px
+a
+  font-weight: bold
+  color: $text-color-primary
 
-.nav-link
-  display: block
-  padding: 5px 10px
-  color: #292828
+  &:hover
+    background-color: $bg-color-secondary
+    color: $text-color-dark
 
-.nav-link.active
-  background-color: $bg-color-primary
-  color: $text-color-light
+p
+  font-size: 1rem
+  color: $text-color-primary
+  margin-bottom: 1rem
 
-// Media queries
+.marketing
+  h2
+    margin-top: 1rem
+    font-size: 2rem
+    color: $text-color-primary
+    margin-bottom: 1rem
+
+
 @media (max-width: 500px)
  ul
   display: flex

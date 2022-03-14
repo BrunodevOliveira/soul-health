@@ -1,6 +1,10 @@
+@import '../../../SASS/main'
+
 .jumbotron
   background-image: url("../../../assets/medicos-home.jpg")
   background-size: cover
+  background-position: center
+  height: 400px
 
 .container
   padding-right: 0
@@ -8,3 +12,24 @@
 
 .row
     --bs-gutter-x: 0 !important
+
+h1
+  font-family: roboto
+  color: $text-color-primary
+  font-weight: bold
+
+h6
+  font-family: roboto
+  font-weight: bold
+  color: $text-color-primary
+
+.card
+  a
+    color: $primary-color
+    font-weight: bold
+    // text-decoration: none
+    &:hover
+      color: $terciary-color
+
+
+
