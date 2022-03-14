@@ -459,27 +459,47 @@
       >
         <table class="table">
           <thead>
-            <tr>
-              <th scope="col">Especialidade</th>
-              <th scope="col">Data</th>
-              <th scope="col">Ações</th>
+            <tr >
+              <th class="text-center" scope="col">Especialidade</th>
+              <th class="text-center" scope="col">Data</th>
+              <th class="text-center" scope="col">Ações</th>
             </tr>
           </thead>
           <tbody>
             <tr *ngFor="let consults of consult">
-              <td>{{ consults.specialty }}</td>
-              <td>{{ consults.date }}</td>
-              <td class="d-flex justify-content-start">
-                <button type="button" class="btn btn-success btn-primary me-2" (click)="updateconsult(consults._id)">
-                  Alterar Consulta
+              <td class=" text-center align-middle">{{ consults.specialty }}</td>
+              <td class=" text-center align-middle">{{ consults.date }}</td>
+              <td class=" text-center align-middle">
+                <button
+                id="edit"
+                type="button"
+                class="btn btn-success btn-primary me-2"
+                (click)="updateconsult(consults._id)">
+                  Alterar
                 </button>
                 <button
+                  id="edit_small"
+                  type="button"
+                  class="btn btn-success btn-primary me-2"
+                  (click)="updateconsult(consults._id)">
+                  <i class="fa-solid fa-pen-to-square"></i>
+                </button>
+                <button
+                  id="delete"
                   type="button"
                   class="btn btn-danger btn-secondary"
                   (click)="deleteConsult(consults._id)"
                 >
-                  Excluir Consulta
+                  Excluir
                 </button>
+                <button
+                id="delete_small"
+                type="button"
+                class=" btn btn-danger btn-secondary"
+                (click)="deleteConsult(consults._id)"
+              >
+              <i class="fa-solid fa-trash-can"></i>
+              </button>
               </td>
             </tr>
           </tbody>
