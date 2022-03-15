@@ -1,88 +1,41 @@
-# Título do projeto
+# Página de Departamentos.
 
-Um parágrafo da descrição do projeto vai aqui
+A página exibe os departamentos de atendimento do plano de saúde.
 
 ## 🚀 Começando
 
 Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.
 
-Consulte **Implantação** para saber como implantar o projeto.
-
-### 📋 Pré-requisitos
-
-De que coisas você precisa para instalar o software e como instalá-lo?
-
-```
-Dar exemplos
-```
-
 ### 🔧 Instalação
 
-Uma série de exemplos passo-a-passo que informam o que você deve executar para ter um ambiente de desenvolvimento em execução.
-
-Diga como essa etapa será:
-
-```
-Dar exemplos
-```
-
-E repita:
-
-```
-Até finalizar
-```
-
-Termine com um exemplo de como obter dados do sistema ou como usá-los para uma pequena demonstração.
-
-## ⚙️ Executando os testes
-
-Explicar como executar os testes automatizados para este sistema.
-
-### 🔩 Analise os testes de ponta a ponta
-
-Explique que eles verificam esses testes e porquê.
-
-```
-Dar exemplos
-```
-
-### ⌨️ E testes de estilo de codificação
-
-Explique que eles verificam esses testes e porquê.
-
-```
-Dar exemplos
-```
+Instalações dos pacotes descritos no <a href="/README.md">README.MD</a> do projeto.
 
 ## 📦 Desenvolvimento
 
-Adicione notas adicionais sobre como implantar isso em um sistema ativo
-
+<p>A 1ª section foi construída com um container contendo uma imagem de background, e um título.</p>
+<br />
+<img src="/documentation/assets/depart.png">
+<br />
+<br />
+<p>A 2ª section foi construída com um container contendo cards em que está detalhado cada Depastamento através de: Titulo, Descrição e Imagem.
+</p>
+<img src="/documentation/assets/cardsDepart.png">
+<br />
+<br />
 ## 🛠️ Construído com
 
-Mencione as ferramentas que você usou para criar seu projeto
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - O framework web usado
-* [Maven](https://maven.apache.org/) - Gerente de Dependência
-* [ROME](https://rometools.github.io/rome/) - Usada para gerar RSS
-
-## 🖇️ Colaborando
-
-Por favor, leia o [COLABORACAO.md](https://gist.github.com/usuario/linkParaInfoSobreContribuicoes) para obter detalhes sobre o nosso código de conduta e o processo para nos enviar pedidos de solicitação.
+- [Angular](https://angular.io/)
+- [Bootstrap](https://getbootstrap.com/docs/5.1/getting-started/introduction/)
+- [TypeScript](https://www.typescriptlang.org/)
 
 ## 📌 Versão
 
-Nós usamos [SemVer](http://semver.org/) para controle de versão. Para as versões disponíveis, observe as [tags neste repositório](https://github.com/suas/tags/do/projeto). 
+Nós usamos o GitHub para controle de versão.
 
 ## ✒️ Autores
 
-Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
-
-* **Um desenvolvedor** - *Trabalho Inicial* - [umdesenvolvedor](https://github.com/linkParaPerfil)
-* **Fulano De Tal** - *Documentação* - [fulanodetal](https://github.com/linkParaPerfil)
-
-Você também pode ver a lista de todos os [colaboradores](https://github.com/usuario/projeto/colaboradores) que participaram deste projeto.
-
-## 📄 Licença
-
-Este projeto está sob a licença (sua licença) - veja o arquivo [LICENSE.md](https://github.com/usuario/projeto/licenca) para detalhes.
+- **Bruno Gomes** - (https://github.com/BrunodevOliveira)
+- **Camila Silva** - (https://github.com/CamiMSilva)
+- **Jaqueline Rodrigues** - (https://github.com/agorasoudev)
+- **Lucélia Batista** - (https://github.com/Luceliabatista)
+- **Silas Sousa** - (https://github.com/SilasSousadeJesus)
