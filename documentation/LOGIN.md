@@ -1,16 +1,20 @@
 # Pagina de Login
 
   Pagina de login e autenticação de beneficarios. Esta a autenticação deste pagina é pre-requisto para acessar as paginas para beneficiarios que estão protegidas por guarda de rotas.
+  
 
 ## 🚀 Começando
 
 Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.
 
+
 ### 🔧 Instalação
+
 
 Instalações dos pacotes descritos no <a href="/README.md">README.MD</a> do projeto.
 
 ## 📦 Desenvolvimento
+
 
   <p>Pagina com a função de login do beneficiario. Este componete html coleta os dados por meio de um formulario, passa esses dados como parametros para a função signin, que por sua vez passa esses parametros para o serviço que espera receber um objeto (user) pra se relacionar como endpoint que fará as verificações para identificar se a senha e o email correspondem ao que esta salvo e encriptografado no banco de dados. Caso as informações correspondam, o backend envia como resposta um token de autenticação do usuario. </p>
 
