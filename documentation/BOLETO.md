@@ -25,18 +25,21 @@ Neste há 2 botões com opções de ação:
 Funcionalidade básicas dos botões:
 <li>Copiar Código</li>
 <br/>
-<img src="/documentation/assets/alert.png">
 <br/>
-Este botão, quando clicado, exibe um alerta informativo.
+<img src="/documentation/assets/copiar.png">
+<br />
+Este botão, quando clicado, exibe um alerta informativo devido a parametrização do alert no arquivo typescript.
+<img src="/documentation/assets/alert.png">
 <br/>
 <br/>
 
 
 <li>Gerar 2ª via</li>
+Este botão, quando clicado, direciona a página para uma imagem pronta, com exemplo de boleto, devido a tag com o href.
+
 <br/>
-<img src="/documentation/assets/alert.png">
+<img src="/documentation/assets/via.png">
 <br/>
-Este botão, quando clicado, direciona a página para uma imagem pronta, com exemplo de boleto.
 </ul>
 
 ## 🛠️ Construído com
