@@ -1,10 +1,10 @@
 <main class="container">
-  <div class="row justify-content-center my-5">
+  <div class="row justify-content-center my-4">
     <div
       class="d-none d-sm-block col-md-12 col-lg-7 text-center align-self-center"
     >
       <img
-        src="../../assets/medica-signup.jpeg"
+        src="../../../assets/teste_cadastro_ccexpress.png"
         alt="cadastro imagem"
         class="img-fluid rounded"
       />
@@ -17,9 +17,7 @@
         novalidade
         (submit)="onSubmit()"
       >
-        <h5 class="text-center">Preencha os campos para criar sua conta</h5>
-
-        <hr style="width: 50%; margin: 15px auto" />
+        <h3 class="text-center">Cadastro <img SRC="../../../assets/img-logo/logoPrincipalFinal_corte.png" width="200px"></h3>
 
         <div class="mt-2">
           <!-- Nome -->
@@ -139,16 +137,17 @@
             mínimo 4 caracteres
           </div>
 
-            <button type="submit" class="btn btn-primary mt-4 w-100" [disabled]="f.invalid">
+          <div class="d-flex justify-content-center align-items-center">
+            <button type="submit" class="btn btn-primary mt-4 w-50 text-center" [disabled]="f.invalid">
               Cadastrar
             </button>
-
+          </div>
 
         </div>
 
         <p class="text-center text-muted mt-3">Ou entre com:</p>
 
-        <div class="d-flex justify-content-evenly">
+        <div id="loginSocial" class="d-flex justify-content-center">
           <a href="https://pt-br.facebook.com/" target="_blank">
             <svg
               xmlns="http://www.w3.org/2000/svg"
