@@ -1,6 +1,6 @@
 # Página de 2ª via de Boleto.
 
-A página exibe uma simulação da visualização de detalhes de um boleto.
+A página exibe uma simulação da visualização com detalhes de um boleto para beneficiários.
 
 ## 🚀 Começando
 
@@ -14,15 +14,31 @@ Instalações dos pacotes descritos no <a href="/README.md">README.MD</a> do pro
 
 <p>A div possui um formulário com detalhes, simulando o produto do plano contratado pelo usuário, e as cooparticipações.</p>
 Neste há 2 botões com opções de ação:
-<ul>
-<br/>
-<li>Copiar Código</li>
-<li>Gerar 2ª via</li>
-</ul>
+
 <br />
 <img src="/documentation/assets/boleto.png">
 <br />
 <br />
+<ul>
+
+
+Funcionalidade básicas dos botões:
+<li>Copiar Código</li>
+<br/>
+<img src="/documentation/assets/alert.png">
+<br/>
+Este botão, quando clicado, exibe um alerta informativo.
+<br/>
+<br/>
+
+
+<li>Gerar 2ª via</li>
+<br/>
+<img src="/documentation/assets/alert.png">
+<br/>
+Este botão, quando clicado, direciona a página para uma imagem pronta, com exemplo de boleto.
+</ul>
+
 ## 🛠️ Construído com
 
 - [Angular](https://angular.io/)
