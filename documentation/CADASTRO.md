@@ -1,88 +1,51 @@
-# Título do projeto
+# Como se cadastrar no Soul Health
 
-Um parágrafo da descrição do projeto vai aqui
+- Acesse o Soul Health e clique no botão cadastro
+- Preencha os campos com nome, cpf, telefone email e senha
+- Clique em cadastrar 
 
-## 🚀 Começando
+![Tela de cadastro](./assets/cadastro-2.png)
 
-Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.
+## Possíveis erros ao tentar se cadastrar
 
-Consulte **Implantação** para saber como implantar o projeto.
+- Nome com menos de 3 caracteres
+- CPF inválido com menos de 11 números
+- Número de telefone inválido com menos de 11 números
+- Email inválido por falte de provedor
+- Campo de senha inválido com menos de 4 caracteres
+- Preencher todos os campos corretamente é condição para que o botão de cadastrar se torne clicavel
+![Tela de cadastro](./assets/cadastro-3.png)
+# Padrão de codificação
+- códigos sem o uso de ponto e vírgula
+- nomes de variáveis em inglês
 
-### 📋 Pré-requisitos
+### Arquivo signup.component.ts
+- Serviço `SignupService`: serviço responsável por enviar os dados de cadastro ao endpoint através `método HTTP POST`.
+- Variável `User`: variável do tipo Signup que é responsável por armazenar as informações inseridas em cada input pelo usuário
+- Método `onSubmit()`: responsável por enviar as informações armazenadas em `user` para o endpoint especificado no serviço `SignupService`. Após o envio das informções o usuário será redirecionado para a view de login.
 
-De que coisas você precisa para instalar o software e como instalá-lo?
+### Arquivo signup.service.ts
+- Variável `url`: variável responsável por armazenar parte do endpoint que será utilizado para o envio dos dados.
+- Variável `http`: criada dentro do constructor da classe para instanciar os métodos https.
+- Método `signUp(user:Signup)`: responsável por enviar as informações armazenadas no parametro `user` para o endpoint especificado no método `http.post<Signup>()`
 
-```
-Dar exemplos
-```
-
-### 🔧 Instalação
-
-Uma série de exemplos passo-a-passo que informam o que você deve executar para ter um ambiente de desenvolvimento em execução.
-
-Diga como essa etapa será:
-
-```
-Dar exemplos
-```
-
-E repita:
-
-```
-Até finalizar
-```
-
-Termine com um exemplo de como obter dados do sistema ou como usá-los para uma pequena demonstração.
-
-## ⚙️ Executando os testes
-
-Explicar como executar os testes automatizados para este sistema.
-
-### 🔩 Analise os testes de ponta a ponta
-
-Explique que eles verificam esses testes e porquê.
-
-```
-Dar exemplos
-```
-
-### ⌨️ E testes de estilo de codificação
-
-Explique que eles verificam esses testes e porquê.
-
-```
-Dar exemplos
-```
-
-## 📦 Desenvolvimento
-
-Adicione notas adicionais sobre como implantar isso em um sistema ativo
-
+### Arquivo signup.ts
+- ``Interface`` responsável por padronizar os dados que serão enviados ao backEnd
+- Através dessa interface é tipada a variável `user` de signup.component.ts, o parametro do método `signUp(user:Signup)` localizado em signup.service.ts e o método `http.post<Signup>()` sendo tipado com o operador diamante`<>`.
 ## 🛠️ Construído com
 
-Mencione as ferramentas que você usou para criar seu projeto
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - O framework web usado
-* [Maven](https://maven.apache.org/) - Gerente de Dependência
-* [ROME](https://rometools.github.io/rome/) - Usada para gerar RSS
-
-## 🖇️ Colaborando
-
-Por favor, leia o [COLABORACAO.md](https://gist.github.com/usuario/linkParaInfoSobreContribuicoes) para obter detalhes sobre o nosso código de conduta e o processo para nos enviar pedidos de solicitação.
+- [Angular](https://angular.io/)
+- [Bootstrap](https://getbootstrap.com/docs/5.1/getting-started/introduction/)
+- [TypeScript](https://www.typescriptlang.org/)
 
 ## 📌 Versão
 
-Nós usamos [SemVer](http://semver.org/) para controle de versão. Para as versões disponíveis, observe as [tags neste repositório](https://github.com/suas/tags/do/projeto). 
+Nós usamos o GitHub para controle de versão.
 
 ## ✒️ Autores
 
-Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
-
-* **Um desenvolvedor** - *Trabalho Inicial* - [umdesenvolvedor](https://github.com/linkParaPerfil)
-* **Fulano De Tal** - *Documentação* - [fulanodetal](https://github.com/linkParaPerfil)
-
-Você também pode ver a lista de todos os [colaboradores](https://github.com/usuario/projeto/colaboradores) que participaram deste projeto.
-
-## 📄 Licença
-
-Este projeto está sob a licença (sua licença) - veja o arquivo [LICENSE.md](https://github.com/usuario/projeto/licenca) para detalhes.
+- **Bruno Gomes** - (https://github.com/BrunodevOliveira)
+- **Camila Silva** - (https://github.com/CamiMSilva)
+- **Jaqueline Rodrigues** - (https://github.com/agorasoudev)
+- **Lucélia Batista** - (https://github.com/Luceliabatista)
+- **Silas Sousa** - (https://github.com/SilasSousadeJesus)
