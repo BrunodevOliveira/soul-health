@@ -29,10 +29,11 @@ input
   &:focus
     border: 1px solid $primary-color
 
-span
-  background-color: $primary-color
-  color: $terciary-color
-  border: 1px solid $primary-color
+.input-group
+  span
+    background-color: $primary-color
+    color: $terciary-color
+    border: 1px solid $primary-color
 
 p
   color: $text-color-primary
@@ -48,10 +49,20 @@ hr
 
 .btn-primary
   @include btn-primary
+  width: 15rem
 
 #loginSocial
   a
     margin: 0px 15px 0px 15px
 
+#nAttemps
+  color: $text-color-primary
+  display: flex
+  justify-content: center
+
+#reCaptcha
+  display: flex
+  justify-content: center
+  align-items: center
 
 
