@@ -18,7 +18,7 @@ export class AccreditedComponent implements OnInit {
 
 searchValue:string=''
 
-  doctors:IDoctor[]=[]
+doctors:IDoctor[]=[]
 
 
   doctorsList:IDoctor[]= [{
@@ -111,7 +111,7 @@ searchValue:string=''
       const nameIsValid = doctor.name.toLowerCase().includes(this.searchValue.toLowerCase())
       const specialtyIsValid = doctor.specialty.toLowerCase().includes(this.searchValue.toLowerCase())
       const placeIsValid = doctor.place.toLowerCase().includes(this.searchValue.toLowerCase())
-      return nameIsValid || specialtyIsValid || placeIsValid 
+      return nameIsValid || specialtyIsValid || placeIsValid
     })
   }
 
