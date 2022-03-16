@@ -20,28 +20,28 @@ Instalações dos pacotes descritos no <a href="/README.md">README.MD</a> do pro
 
 ### Navbar
 <p>A Navbar é composta pos duas navbars uma superior (div header Navbar) e uma inferior (header)</p>
-<img src="/chatDialogFlow3/documentation/assets/Header_Navbar.png">
+<img src="/documentation/assets/Header_Navbar.png">
 <br/>
 <p>Na parte superior esquerda da navbar, que corresponde a 1ª div contida no código HTML, o usuário terá acesso aos links das redes sociais da aplicação através dos ícones de cada rede respectivamente Facebook, Twitter, Instagram e Whatsapp.</p>
 <p>Na parte inferior esquerda da navbar, que corresponde a div fancy-navbar contém a imagem da logo principal, que a partir do breakpoint 575px a imagem é substituida pela logo secundária</p>
-<img src="/chatDialogFlow3/documentation/assets/Navbar_respons2.png">
+<img src="/documentation/assets/Navbar_respons2.png">
 <br/>
 
 <p>Na parte superior central da navbar que corresponde a div listCenter o usuário terá acesso aos links de telefone e email de contato. Ao clicar sobre o número de telefone e/ou sobre o e-mail o usuário será redirecionado para uma chamada ou para seu e-mail.
 A navbar está responsiva, ao chegar no breakpoint 920px a div listCenter é ocultada e ficam apenas os links de redes sociais e o botão de login.</p>
 <p>Na parte inferior central foi utilizado uma navbar offcanvas, onde se pode acessar as páginas Home, Sobre, Departamentos e Cadastro através dos links. A partir do breakpoint 991px os links são ocultados e transferidos para um menu lateral que pode ser acessado através do botão.</p>
 <p>- Botão Lateral da navbar</p>
-<img src="/chatDialogFlow3/documentation/assets/Navbar_respons.png">
+<img src="/documentation/assets/Navbar_respons.png">
 <br/>
 <p>- Menu Lateral da navbar</p>
-<img src="/chatDialogFlow3/documentation/assets/menuLateral_navbar.png">
+<img src="/documentation/assets/menuLateral_navbar.png">
 <br/>
 
 <p>Na parte superior direita da navbar que corresponde a div listRight o usuário terá acesso ao botão de login (Entrar) ao clicar ele será redirecionado para a página de login, após realizar o login o botão muda para um ícone de usuário e ativa um menu dropdown.</p>
-<img src="/chatDialogFlow3/documentation/assets/btn_header_navbar_dropdown.png">
+<img src="/documentation/assets/btn_header_navbar_dropdown.png">
 <br/>
 <p>Tudo foi construído através da diretiva ngIf e as tags ng-container e ng-template.</p>
-<img src="/chatDialogFlow3/documentation/assets/ngif_navbar.png">
+<img src="/documentation/assets/ngif_navbar.png">
 <br/>
 
 ## 🛠️ Construído com
