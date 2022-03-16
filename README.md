@@ -12,6 +12,7 @@ Software desenvolvido para a edtech SoulCode Academy, como projeto final do boot
 - [TypeScript](https://www.typescriptlang.org/)
 
 <br />
+
 ## 🚀 Descrição
 
 <p>O objetivo do projeto foi desenvolver uma aplicação web para uma empresa de plano de saúde(fictícia), onde beneficiários do plano poderão ter acesso a informações sobre os produtos oferecidos por esta empresa, assim como, também poderá administrar os serviços já contratados.</p>
@@ -99,7 +100,7 @@ Clique sobre o item desejado para acessar a documentação da página correspond
       <a href="https://github.com/CamiMSilva">
         <img src="https://img.shields.io/badge/GitHub-100000?&logo=github&logoColor=white">
       </a>
-      <a href="https://www.linkedin.com/in/">
+      <a href="https://www.linkedin.com/in/CamiSilvaDev/">
         <img src="https://img.shields.io/badge/LinkedIn-0077B5?&logo=linkedin&logoColor=white">
       </a>
     </li>
@@ -129,13 +130,14 @@ Clique sobre o item desejado para acessar a documentação da página correspond
       <a href="https://github.com/SilasSousadeJesus">
         <img src="https://img.shields.io/badge/GitHub-100000?&logo=github&logoColor=white">
       </a>
-      <a href="https://www.linkedin.com/in/silas-sousa-815628150/">
+      <a href="https://www.linkedin.com/in/SilasSousadeJesus">
         <img src="https://img.shields.io/badge/LinkedIn-0077B5?&logo=linkedin&logoColor=white">
       </a>
     </li>
 
   </ul>
 <br />
+
 ## 📌 Versão
 
 Nós usamos o GitHub para controle de versão.
