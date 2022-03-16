@@ -2,60 +2,66 @@
   role="main"
   class="col-md-10 col-sm-12 col-12 ml-sm-auto col-lg-9 m-auto px-4 pb-5"
 >
-  <div
-    class="chartjs-size-monitor-expand"
-    style="
-      position: absolute;
-      left: 0;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      overflow: hidden;
-      pointer-events: none;
-      visibility: hidden;
-      z-index: -1;
-    "
-  >
+  <!-- Área de busca -->
+  <section>
     <div
+      class="chartjs-size-monitor-expand"
       style="
         position: absolute;
-        width: 1000000px;
-        height: 1000000px;
         left: 0;
         top: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+        pointer-events: none;
+        visibility: hidden;
+        z-index: -1;
       "
-    ></div>
-  </div>
-  <div
-    class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3"
-  >
-    <input
-      class="form-control form-control-dark w-100"
-      type="text"
-      (change)="search($event)"
-      placeholder="Search"
-      aria-label="Search"
-    />
-    <button class="btn btn-light">Buscar</button>
-  </div>
+    >
+      <div
+        style="
+          position: absolute;
+          width: 1000000px;
+          height: 1000000px;
+          left: 0;
+          top: 0;
+        "
+      ></div>
+    </div>
+    <div
+      class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3"
+    >
+      <input
+        class="form-control w-100"
+        type="text"
+        (change)="search($event)"
+        placeholder="Search"
+        aria-label="Search"
+      />
+      <button class="btn btn-light">Buscar</button>
+    </div>
+  </section>
 
-  <h2 class="py-4 col-12">Médicos Credenciados</h2>
-  <div class="table-responsive">
-    <table class="table table-striped table-sm">
-      <thead>
-        <tr>
-          <th>Nome</th>
-          <th>Especialidade</th>
-          <th>Local</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let doctor of doctors" >
-          <td>{{doctor.name}}</td>
-          <td>{{doctor.specialty}}</td>
-          <td>{{doctor.place}}</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+  <!-- Tabela de exibição da listagem dos dados para consulta -->
+  <section>
+    <h2 class="py-4 col-12">Médicos Credenciados</h2>
+    <div class="table-responsive">
+      <table class="table table-striped table-sm">
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Especialidade</th>
+            <th>Local</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let doctor of doctors">
+            <td>{{ doctor.name }}</td>
+            <td>{{ doctor.specialty }}</td>
+            <td>{{ doctor.place }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
 </main>
