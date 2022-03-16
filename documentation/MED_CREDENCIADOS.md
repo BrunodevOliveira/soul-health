@@ -1,4 +1,4 @@
-# Página de Departamentos.
+# Página de Médicos Credenciados.
 
 A página exibe uma listagem de nomes, departamentos e locais de atendimento, de cada médico crendênciado do plano de saúde.
 
