@@ -1,88 +1,67 @@
-# Título do projeto
+# Página Home da Aplicação
 
-Um parágrafo da descrição do projeto vai aqui
+<p>A página Home é o primeiro contato do usuário com a aplicação do plano médico SoulHealth. Dessa forma, ela atende tanto o usuário que já é associado ao plano, direcionando-o ao login, quanto o usuário que quer saber mais sobre o plano.</p>
+
 
 ## 🚀 Começando
 
 Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.
 
-Consulte **Implantação** para saber como implantar o projeto.
-
 ### 📋 Pré-requisitos
 
-De que coisas você precisa para instalar o software e como instalá-lo?
-
-```
-Dar exemplos
-```
+Não há.
 
 ### 🔧 Instalação
 
-Uma série de exemplos passo-a-passo que informam o que você deve executar para ter um ambiente de desenvolvimento em execução.
-
-Diga como essa etapa será:
-
-```
-Dar exemplos
-```
-
-E repita:
-
-```
-Até finalizar
-```
-
-Termine com um exemplo de como obter dados do sistema ou como usá-los para uma pequena demonstração.
-
-## ⚙️ Executando os testes
-
-Explicar como executar os testes automatizados para este sistema.
-
-### 🔩 Analise os testes de ponta a ponta
-
-Explique que eles verificam esses testes e porquê.
-
-```
-Dar exemplos
-```
-
-### ⌨️ E testes de estilo de codificação
-
-Explique que eles verificam esses testes e porquê.
-
-```
-Dar exemplos
-```
+<p>Instalações dos pacotes descritos no <a href="/README.md">README.MD</a> do projeto.</p>
 
 ## 📦 Desenvolvimento
 
-Adicione notas adicionais sobre como implantar isso em um sistema ativo
+### Jumbotron
+
+<p>No topo da tela, o usuário se depara com um jumbotron ou hero, recurso comumente usado para chamar a atenção do usuário para o produto e que contém um "chamado à ação". No caso da home SoulHealth, o jumbotron é uma div container de Bootstrap que contém uma imagem de fundo retratando uma equipe médica e dois botões, um que direcionam o usuário associado ao login e todas as funcionalidades online do plano médico, e o outro que direciona o não-associado a se cadastrar.</p>
+</br>
+<img src="../documentation/assets/Hero-home.png">
+
+### Agência Virtual
+
+<p>A agência virtual é a seção da home que visa facilitar o acesso do cliente associado aos recursos mais rotineiros do plano, como 2ª via de boleto, pesquisa de rede de atendimento, etc. Esses recursos estão dispostos em cards com ícones que fazem referência ao serviço e link para ele.</p> 
+<p>Importante ressaltar que, caso o usuário não esteja logado, ele não conseguirá acessar essas rotas, mas será antes redirecionado ao login.</p>
+</br>
+<img src="../documentation/assets/agencia-virtual.png">
+
+### Rede de atendimento
+
+<p>Trata-se da seção onde o usuário poderá fazer a busca da rede credenciada ao plano. Foi desenvolvida em um container com classe card que contém um formulário com diversos inputs do tipo select, nos quais o usuário poderá filtrar características do atendimento que deseja buscar, como localização, especialidade, etc.</p>
+</br>
+<img src="../documentation/assets/busca-rede.png">
+
+### Notícias
+
+<p>Nessa seção, o usuário tem acesso a algumas notícias da área médica. Elas são apresentadas no formato de carrossel (slideshow), sendo que cada uma contém título e subtítulo, controle de avançar e retroceder e indicadores de posição no carrossel.</p>
+</br>
+<img src="../documentation/assets/noticias.png">
+
+### Contatos
+
+<p>Aqui o usuário tem acesso aos canais de contato do SoulHealth. Essa seção foi desenvolvida como um menu acordeão, sendo constituído por guias que abrem e fecham ao clique do mouse. A intenção é que elas iniciem todas fechadas e o usuário abra apenas a que satisfaz sua necessidade, visando não poluir a visualização e facilitar o entendimento da informação.</p>
+</br>
+<img src="../documentation/assets/contatos.png">
 
 ## 🛠️ Construído com
 
-Mencione as ferramentas que você usou para criar seu projeto
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - O framework web usado
-* [Maven](https://maven.apache.org/) - Gerente de Dependência
-* [ROME](https://rometools.github.io/rome/) - Usada para gerar RSS
-
-## 🖇️ Colaborando
-
-Por favor, leia o [COLABORACAO.md](https://gist.github.com/usuario/linkParaInfoSobreContribuicoes) para obter detalhes sobre o nosso código de conduta e o processo para nos enviar pedidos de solicitação.
+- [Angular](https://angular.io/)
+- [Bootstrap](https://getbootstrap.com/docs/5.1/getting-started/introduction/)
+- [TypeScript](https://www.typescriptlang.org/)
 
 ## 📌 Versão
 
-Nós usamos [SemVer](http://semver.org/) para controle de versão. Para as versões disponíveis, observe as [tags neste repositório](https://github.com/suas/tags/do/projeto). 
+Nós usamos o GitHub (https://github.com/) para controle de versão.
 
 ## ✒️ Autores
 
-Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
-
-* **Um desenvolvedor** - *Trabalho Inicial* - [umdesenvolvedor](https://github.com/linkParaPerfil)
-* **Fulano De Tal** - *Documentação* - [fulanodetal](https://github.com/linkParaPerfil)
-
-Você também pode ver a lista de todos os [colaboradores](https://github.com/usuario/projeto/colaboradores) que participaram deste projeto.
-
-## 📄 Licença
-
-Este projeto está sob a licença (sua licença) - veja o arquivo [LICENSE.md](https://github.com/usuario/projeto/licenca) para detalhes.
+- **Bruno Gomes** - (https://github.com/BrunodevOliveira)
+- **Camila Silva** - (https://github.com/CamiMSilva)
+- **Jaqueline Rodrigues** - (https://github.com/agorasoudev)
+- **Lucélia Batista** - (https://github.com/Luceliabatista)
+- **Silas Sousa** - (https://github.com/SilasSousadeJesus)
