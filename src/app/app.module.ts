@@ -13,6 +13,7 @@ import { SignupComponent } from './register/signup/signup.component';
 import { AppHomeComponent } from './app-home/app-home.component';
 import { RecaptchaModule } from 'ng-recaptcha';
 import { NgxMaskModule } from 'ngx-mask'
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 
 
@@ -33,6 +34,7 @@ import { NgxMaskModule } from 'ngx-mask'
     HttpClientModule,
     RecaptchaModule,
     NgxMaskModule.forRoot(),
+    Ng2SearchPipeModule
   ],
   providers: [],
   bootstrap: [AppComponent],
