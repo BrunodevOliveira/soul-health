@@ -1,88 +1,75 @@
-# Título do projeto
+# Como acessar página Meus Agendamentos
 
-Um parágrafo da descrição do projeto vai aqui
+- Acesse a aplicação Soul Health.
+- Clique em entrar e informe seus dados de usuário.
+- Ou, se já estiver logado mas acessando outra página, clique no botão `minha página` localizado no canto superior direito.
+- Em seguida acesse a aba "Meus Agendamentos"
 
-## 🚀 Começando
+- A tela exibida mostrará as consultas já agendadas, se existirem, e exibirá os botões de "Alterar" e de "Excluir", permitindo assim que o beneficiário possa administrar seus agendamentos.
 
-Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.
+<br />
 
-Consulte **Implantação** para saber como implantar o projeto.
+ <img src="/documentation/assets/agendamento.png">
+  
 
-### 📋 Pré-requisitos
 
-De que coisas você precisa para instalar o software e como instalá-lo?
+### 📋 Atualizar
 
-```
-Dar exemplos
-```
+- Ao clicar no botão **Alterar**, o usuário sera redirecionado para a página onde os dados poderão ser editados.
+- Após a edição dos dados, basta clicar no botão **Reagendar** para que os novos dados sejam salvos ou em **cancelar** para permanecer com os atuais.
 
-### 🔧 Instalação
+    <img src="/documentation/assets/atualizar.png">
+    <br>
 
-Uma série de exemplos passo-a-passo que informam o que você deve executar para ter um ambiente de desenvolvimento em execução.
+### 🗑️ Excluir
 
-Diga como essa etapa será:
-
-```
-Dar exemplos
-```
-
-E repita:
-
-```
-Até finalizar
-```
-
-Termine com um exemplo de como obter dados do sistema ou como usá-los para uma pequena demonstração.
-
-## ⚙️ Executando os testes
-
-Explicar como executar os testes automatizados para este sistema.
-
-### 🔩 Analise os testes de ponta a ponta
-
-Explique que eles verificam esses testes e porquê.
-
-```
-Dar exemplos
-```
-
-### ⌨️ E testes de estilo de codificação
-
-Explique que eles verificam esses testes e porquê.
-
-```
-Dar exemplos
-```
+- Ao clicar no botão **Excluir**, a consulta agendada será excluída, sem necessitar de confirmação.
 
 ## 📦 Desenvolvimento
 
-Adicione notas adicionais sobre como implantar isso em um sistema ativo
+Para realizar as ações descritas acima foram desenvolvidos os seguintes códigos:
+
+- Serviço ConsultService
+  - Responsável pela comunicação entre o front end da aplicação e sua API.
+  - Através dele foi desenvolvido a forma de envio e recebimento de dados.
+  - A depender da ação que o usuário queira realizar, será executado um dos seguintes métodos:
+    - `getconsult(email:string)`→ Envia o email através do método `GET` e obtém como resposta os dados do agendamento do usuário referente ao email enviado.
+    - `updateConsult(id:string, consult: Consult )`→ Envia o Id da consulta do usuário e os dados que serão atualizados através do método `POST`, obtendo como resposta os dados do agendamento do usuário atualizados.
+    - `deleteconsult(id:string)`→ Envia o Id da consulta do usuário através do método `GET`, e a consulta é excluída do banco de dados.
+    <div style="text-align: center;">
+      <img src="./assets/serviceAgend.png">
+    <div> 
+      <br>
+- Componente homeUser
+
+  - Responsável por capturar a interação do usuário e envia-la por meio do serviço beneficiary-service
+
+    - `updateconsult()`→ Identifica o a consulta do usuário através do ID e envia os dados atualizados que são armazenados na variável `consult`.
+
+  <div style="text-align: center;">
+    <img src="./assets/consultAg.png">
+  <div> 
+    <br>
+
+### Padrão de codificação
+
+- códigos sem o uso de ponto e vírgula
+- nomes de variáveis em inglês
 
 ## 🛠️ Construído com
 
-Mencione as ferramentas que você usou para criar seu projeto
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - O framework web usado
-* [Maven](https://maven.apache.org/) - Gerente de Dependência
-* [ROME](https://rometools.github.io/rome/) - Usada para gerar RSS
-
-## 🖇️ Colaborando
-
-Por favor, leia o [COLABORACAO.md](https://gist.github.com/usuario/linkParaInfoSobreContribuicoes) para obter detalhes sobre o nosso código de conduta e o processo para nos enviar pedidos de solicitação.
+- [Angular](https://angular.io/)
+- [Bootstrap](https://getbootstrap.com/docs/5.1/getting-started/introduction/)
+- [TypeScript](https://www.typescriptlang.org/)
 
 ## 📌 Versão
 
-Nós usamos [SemVer](http://semver.org/) para controle de versão. Para as versões disponíveis, observe as [tags neste repositório](https://github.com/suas/tags/do/projeto). 
+Nós usamos o GitHub para controle de versão.
 
 ## ✒️ Autores
 
-Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
-
-* **Um desenvolvedor** - *Trabalho Inicial* - [umdesenvolvedor](https://github.com/linkParaPerfil)
-* **Fulano De Tal** - *Documentação* - [fulanodetal](https://github.com/linkParaPerfil)
-
-Você também pode ver a lista de todos os [colaboradores](https://github.com/usuario/projeto/colaboradores) que participaram deste projeto.
-
-## 📄 Licença
-
-Este projeto está sob a licença (sua licença) - veja o arquivo [LICENSE.md](https://github.com/usuario/projeto/licenca) para detalhes.
+- **Bruno Gomes** - (https://github.com/BrunodevOliveira)
+- **Camila Silva** - (https://github.com/CamiMSilva)
+- **Jaqueline Rodrigues** - (https://github.com/agorasoudev)
+- **Lucélia Batista** - (https://github.com/Luceliabatista)
+- **Silas Sousa** - (https://github.com/SilasSousadeJesus)
