@@ -1,114 +1,141 @@
-## Projeto final
+## 📦 Introdução
 
-Cada grupo fara seu próprio projeto.
-Nome do site ou empresa representada no projeto, fica a critério de cada grupo.
-Deadline: 18/03/2022
+Software desenvolvido para a edtech SoulCode Academy, como projeto final do bootcamp BCW9 de Web Full Stack.
 
-### Descrição geral
+ ⚙️ Professores orientadores: Victor Icoma, José Almir e Sayure Paiva.
+<br />
 
-Site feito em Angular com área de informações institucionais, CRUD de cadastro e validação o, login e chat. Seguindo o conceito de mobile first, sendo responsivo. 
+## 🛠️ Front-end construído com
 
-Não será necessário implementar questões de segurança, apenas validação de campos.
-A troca de página será utilizando lazy loading do Angular.
-Login será condição para poder acessar a área de chat de suporte técnico que utilizará o DialogFlow.
+- [Angular 12](https://angular.io/)
+- [Bootstrap](https://getbootstrap.com/docs/5.1/getting-started/introduction/)
+- [TypeScript](https://www.typescriptlang.org/)
 
-### Arquitetura
+<br />
+## 🚀 Descrição
 
-Frontend:
-•	Páginas Institucionais, 
-•	Formulário de cadastro de usuário com validação de campos (registro do cadastro deverá ser um objeto), 
-•	Login,
-•	e chat.
-•	* Definição requisitos sobre o que necessariamente deverá ser componente, à definir.
+<p>O objetivo do projeto foi desenvolver uma aplicação web para uma empresa de plano de saúde(fictícia), onde beneficiários do plano poderão ter acesso a informações sobre os produtos oferecidos por esta empresa, assim como, também poderá administrar os serviços já contratados.</p>
+A empresa foi denominada:
 
-Backend:
-	•	CRUD de cadastros de usuários utilizando classes,
-	•	Login (sem necessidade de se preocupar com questões de segurança),
-	•	conexão com banco de dados MySQL,
-	•	Chat com integração com DialogFlow.
+<img align="center" src="/documentation/assets/logoPrincipalFinal_corte.png">
 
-### Guia para utilização de recursos aprendidos nos módulos
+<br />
 
-HTML
-•	Estrutura de página
-•	Inserção de imagens
-•	Links e ancoras
-•	Listas - Ordenadas e não ordenadas
-•	Elementos HTML 5
-•	Estrutura e Semântica
-•	Tabelas
-•	Formulários
+## 📌 Escopo do Projeto
 
-CSS
-•	CSS Inline;
-•	Formatação de texto, fontes e alinhamentos personalizados:
-•	Cores hexadecimal, rgb e nomes
-•	Margins e paddings Bordas e Shadow
-•	Cores Gradientes
-•	Page Layout Elementos Float e Clear
-•	Layout fixo e adaptavel
-Flexbox Grid
-•	Design responsivo
-•	Menus - Horizontal vertical e drop down
-•	Media Queries
+A SoulHealth, deseja fornecer ao contratante dos seus planos os seguintes acessos:
 
-Javascript
-•	Variáveis
-•	Operadores matemáticos
-•	Operadores de incremento e decremento
-•	Operadores de comparação
-•	Operadores Lógicos
-•	Tabela verdade
-•	if/else
-•	Loops
-•	Funções e params
-•	Funções anônimas e Arrow Functions
-•	Eventos e DOM
-•	Arrays
-•	Tipos de dados: números, strings, date e objects
+<ul>
+<li>Planos, e benefícios ofertados.</li>
+<li>Informações institucionais.</li>
+<li>Departamentos.</li></li>
+<li>Cadastro de novos contratantes</li>
+<li>Login de beneficiários.</li>
+<li>Rede de médicos credenciados.</li>
+<li>Dados cadastrais, para alteração e exclusão se necessária.</li>
+<li>Consulta da sua fatura atual.</li>
+<li>Informações sobre reembolso.</li>
+<li>Agendamento de consultas marcadas, permitindo edição e exclusão se necessária.</li>
+<li>Chatbot para: informações sobre saúde, marcações de consultas e alterações de consultas agendadas.</li>
+</ul>
+<br />
 
-BOOTSTRAP
-•	Frameworks
-•	Grid
-•	Containers (bootstrap)
-•	Classes CSS Bootstrap
-•	Botão, Video, Imagem, Texto e Tabela
-•	Formularios
-•	Menu & Navegação 
-•	Carrossel
-•	Media queries
-- Jquery
-•	Seletores
-•	Manipulação do DOM
-•	Scrolling Eventos
-•	Animações e Efeitos Jquery UI
+## 📄 Documentação do Projeto
 
-NODE JS
-•	Servidor Web
-•	Programação Server
-•	Side
-•	Node com NPM
-•	Framework express express
-•	Mongo DB Atlas ou MySQL
-•	Mongoose ou alternativa para MySQL
-•	Rotas e controllers
-•	CRUD
-•	MVC
+Clique sobre o item desejado para acessar a documentação da página correspondente:
 
-ANGULAR 12
-•	Type script
-•	Angular CLI
-•	Components
-•	Data binding
-•	Diretivas
-•	Comunicação e ciclo de vida entre componentes
-•	RXJS Observables e
-•	Subjects
-•	- RXJS Operadores
-•	Requisicces HTTP
-•	Formulários
-•	Roteamento
-Agilidade
-•	GitHub
-Google Cloud
-•	DialogFlow
+<li><a href="/documentation/HOME_PRINCIPAL.md">Home</a></li>
+
+<li><a href="/documentation/HOME_BENEFICIARIO.md">Home do Beneficiário</a></li>
+
+<li><a href="/documentation/SOBRE_INSTITUCIONAL.md">Sobre</a></li>
+
+<li><a href="/documentation/DEPARTAMENTOS.md">Departamentos</a></li>
+
+<li><a href="/documentation/CADASTRO.md">Cadastro</a></li>
+
+<li><a href="/documentation/LOGIN.md">Login</a></li>
+
+<li><a href="/documentation/MED_CREDENCIADOS.md">Médicos credenciados</a></li>
+
+<li><a href="/documentation/BOLETO.md">2ª via de boleto</a></li>
+
+<li><a href="/documentation/REEMBOLSO.md">Informações de Reembolso</a></li>
+
+<li><a href="/documentation/CHATBOT.md">Chatbot</a></li>
+
+<li><a href="/documentation/MEUS_DADOS.md">Meus dados</a></li>
+
+<li><a href="/documentation/MEUS_AGENDAMENTOS.md">Meus agendamentos</a></li>
+
+<li><a href="/documentation/NAVBAR.md">Navbar</a></li>
+
+<li><a href="/documentation/FOOTER.md">Footer</a></li>
+<br />
+
+<li><a href="/documentation/SPEC.md"> Software Requirements Specification (SRS)</a></li>
+
+</ul>
+
+<br />
+
+
+## ✒️ Autores
+
+ <ul>
+    <!-- Bruno Oliveira -->
+    <li>
+      <img src="https://img.shields.io/badge/dev-Bruno%20Oliveira-blueviolet">
+      <a href="https://github.com/BrunodevOliveira">
+        <img src="https://img.shields.io/badge/GitHub-100000?&logo=github&logoColor=white">
+      </a>
+      <a href="https://www.linkedin.com/in/brunodevoliveira/">
+        <img src="https://img.shields.io/badge/LinkedIn-0077B5?&logo=linkedin&logoColor=white">
+      </a>
+    </li>
+    <!-- CamiMSilva -->
+    <li>
+      <img src="https://img.shields.io/badge/dev-Camila%20Silva-blueviolet">
+      <a href="https://github.com/CamiMSilva">
+        <img src="https://img.shields.io/badge/GitHub-100000?&logo=github&logoColor=white">
+      </a>
+      <a href="https://www.linkedin.com/in/">
+        <img src="https://img.shields.io/badge/LinkedIn-0077B5?&logo=linkedin&logoColor=white">
+      </a>
+    </li>
+        <!-- Jaqueline Rodrigues  -->
+    <li>
+      <img src="https://img.shields.io/badge/dev-Jaqueline%20Rodrigues-blueviolet">
+      <a href="https://github.com/agorasoudev">
+        <img src="https://img.shields.io/badge/GitHub-100000?&logo=github&logoColor=white">
+      </a>
+      <a href="https://www.linkedin.com/in/jaquelinefcrodrigues/">
+        <img src="https://img.shields.io/badge/LinkedIn-0077B5?&logo=linkedin&logoColor=white">
+      </a>
+    </li>
+    <!-- Lucélia Batista -->
+    <li>
+      <img src="https://img.shields.io/badge/dev-Lucélia%20Batista-blueviolet">
+      <a href="https://github.com/Luceliabatista">
+        <img src="https://img.shields.io/badge/GitHub-100000?&logo=github&logoColor=white">
+      </a>
+      <a href="https://www.linkedin.com/in/luceliabatista/">
+        <img src="https://img.shields.io/badge/LinkedIn-0077B5?&logo=linkedin&logoColor=white">
+      </a>
+    </li>
+    <!-- Silas Sousa -->
+    <li>
+      <img src="https://img.shields.io/badge/dev-Silas%20Sousa-blueviolet">
+      <a href="https://github.com/SilasSousadeJesus">
+        <img src="https://img.shields.io/badge/GitHub-100000?&logo=github&logoColor=white">
+      </a>
+      <a href="https://www.linkedin.com/in/silas-sousa-815628150/">
+        <img src="https://img.shields.io/badge/LinkedIn-0077B5?&logo=linkedin&logoColor=white">
+      </a>
+    </li>
+
+  </ul>
+<br />
+## 📌 Versão
+
+Nós usamos o GitHub para controle de versão.
