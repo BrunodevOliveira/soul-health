@@ -5,12 +5,16 @@ Componente alocado no rodapé da aplicação contendo informações sobre o auto
 
 ## 🚀 Começando
 
+
 Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.
+
 
 ### 🔧 Instalação
 
 
+
 Instalações dos pacotes descritos no <a href="/README.md">README.MD</a> do projeto.
+
 
 ## 📦 Desenvolvimento
 
