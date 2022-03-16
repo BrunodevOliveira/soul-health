@@ -1,4 +1,4 @@
-# Título do projeto
+# Página de informações de Reembolso
 
 <p>A página reembolso é onde o usuário associado encontrará instruções e recursos para solicitar reembolsos cobertos pelo plano.</p>
 
