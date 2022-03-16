@@ -1,6 +1,6 @@
-# Título do projeto
+# Navbar
 
-Um parágrafo da descrição do projeto vai aqui
+Cabeçalho de navegação da aplicação.
 
 ## 🚀 Começando
 
@@ -10,79 +10,55 @@ Consulte **Implantação** para saber como implantar o projeto.
 
 ### 📋 Pré-requisitos
 
-De que coisas você precisa para instalar o software e como instalá-lo?
-
-```
-Dar exemplos
-```
+Não há. Este componente pode ser visto e acessado em qualquer parte da aplicação.
 
 ### 🔧 Instalação
 
-Uma série de exemplos passo-a-passo que informam o que você deve executar para ter um ambiente de desenvolvimento em execução.
-
-Diga como essa etapa será:
-
-```
-Dar exemplos
-```
-
-E repita:
-
-```
-Até finalizar
-```
-
-Termine com um exemplo de como obter dados do sistema ou como usá-los para uma pequena demonstração.
-
-## ⚙️ Executando os testes
-
-Explicar como executar os testes automatizados para este sistema.
-
-### 🔩 Analise os testes de ponta a ponta
-
-Explique que eles verificam esses testes e porquê.
-
-```
-Dar exemplos
-```
-
-### ⌨️ E testes de estilo de codificação
-
-Explique que eles verificam esses testes e porquê.
-
-```
-Dar exemplos
-```
+Instalações dos pacotes descritos no <a href="/README.md">README.MD</a> do projeto.
 
 ## 📦 Desenvolvimento
 
-Adicione notas adicionais sobre como implantar isso em um sistema ativo
+### Navbar
+<p>A Navbar é composta pos duas navbars uma superior (div header Navbar) e uma inferior (header)</p>
+<img src="/chatDialogFlow3/documentation/assets/Header_Navbar.png">
+<br/>
+<p>Na parte superior esquerda da navbar, que corresponde a 1ª div contida no código HTML, o usuário terá acesso aos links das redes sociais da aplicação através dos ícones de cada rede respectivamente Facebook, Twitter, Instagram e Whatsapp.</p>
+<p>Na parte inferior esquerda da navbar, que corresponde a div fancy-navbar contém a imagem da logo principal, que a partir do breakpoint 575px a imagem é substituida pela logo secundária</p>
+<img src="/chatDialogFlow3/documentation/assets/Navbar_respons2.png">
+<br/>
+
+<p>Na parte superior central da navbar que corresponde a div listCenter o usuário terá acesso aos links de telefone e email de contato. Ao clicar sobre o número de telefone e/ou sobre o e-mail o usuário será redirecionado para uma chamada ou para seu e-mail.
+A navbar está responsiva, ao chegar no breakpoint 920px a div listCenter é ocultada e ficam apenas os links de redes sociais e o botão de login.</p>
+<p>Na parte inferior central foi utilizado uma navbar offcanvas, onde se pode acessar as páginas Home, Sobre, Departamentos e Cadastro através dos links. A partir do breakpoint 991px os links são ocultados e transferidos para um menu lateral que pode ser acessado através do botão.</p>
+<p>- Botão Lateral da navbar</p>
+<img src="/chatDialogFlow3/documentation/assets/Navbar_respons.png">
+<br/>
+<p>- Menu Lateral da navbar</p>
+<img src="/chatDialogFlow3/documentation/assets/menuLateral_navbar.png">
+<br/>
+
+<p>Na parte superior direita da navbar que corresponde a div listRight o usuário terá acesso ao botão de login (Entrar) ao clicar ele será redirecionado para a página de login, após realizar o login o botão muda para um ícone de usuário e ativa um menu dropdown.</p>
+<img src="/chatDialogFlow3/documentation/assets/btn_header_navbar_dropdown.png">
+<br/>
+<p>Tudo foi construído através da diretiva ngIf e as tags ng-container e ng-template.</p>
+<img src="/chatDialogFlow3/documentation/assets/ngif_navbar.png">
+<br/>
 
 ## 🛠️ Construído com
 
 Mencione as ferramentas que você usou para criar seu projeto
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - O framework web usado
-* [Maven](https://maven.apache.org/) - Gerente de Dependência
-* [ROME](https://rometools.github.io/rome/) - Usada para gerar RSS
-
-## 🖇️ Colaborando
-
-Por favor, leia o [COLABORACAO.md](https://gist.github.com/usuario/linkParaInfoSobreContribuicoes) para obter detalhes sobre o nosso código de conduta e o processo para nos enviar pedidos de solicitação.
+- [Angular](https://angular.io/)
+- [Bootstrap](https://getbootstrap.com/docs/5.1/getting-started/introduction/)
 
 ## 📌 Versão
 
-Nós usamos [SemVer](http://semver.org/) para controle de versão. Para as versões disponíveis, observe as [tags neste repositório](https://github.com/suas/tags/do/projeto). 
+Nós usamos [Github](https://github.com/) para controle de versão. 
 
 ## ✒️ Autores
 
-Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
-
-* **Um desenvolvedor** - *Trabalho Inicial* - [umdesenvolvedor](https://github.com/linkParaPerfil)
-* **Fulano De Tal** - *Documentação* - [fulanodetal](https://github.com/linkParaPerfil)
-
-Você também pode ver a lista de todos os [colaboradores](https://github.com/usuario/projeto/colaboradores) que participaram deste projeto.
-
-## 📄 Licença
-
-Este projeto está sob a licença (sua licença) - veja o arquivo [LICENSE.md](https://github.com/usuario/projeto/licenca) para detalhes.
+- **Bruno Gomes** - (https://github.com/BrunodevOliveira)
+- **Camila Silva** - (https://github.com/CamiMSilva)
+- **Jaqueline Rodrigues** - (https://github.com/agorasoudev)
+- **Lucélia Batista** - (https://github.com/Luceliabatista)
+- **Silas Sousa** - (https://github.com/SilasSousadeJesus)
