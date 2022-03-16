@@ -1,88 +1,53 @@
 # Título do projeto
 
-Um parágrafo da descrição do projeto vai aqui
+<p>A página reembolso é onde o usuário associado encontrará instruções e recursos para solicitar reembolsos cobertos pelo plano.</p>
 
 ## 🚀 Começando
 
 Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.
 
-Consulte **Implantação** para saber como implantar o projeto.
-
 ### 📋 Pré-requisitos
 
-De que coisas você precisa para instalar o software e como instalá-lo?
-
-```
-Dar exemplos
-```
+<p>Para acessar esta página na aplicação, o usuário precisará estar com seu login autenticado.</p>
 
 ### 🔧 Instalação
 
-Uma série de exemplos passo-a-passo que informam o que você deve executar para ter um ambiente de desenvolvimento em execução.
-
-Diga como essa etapa será:
-
-```
-Dar exemplos
-```
-
-E repita:
-
-```
-Até finalizar
-```
-
-Termine com um exemplo de como obter dados do sistema ou como usá-los para uma pequena demonstração.
-
-## ⚙️ Executando os testes
-
-Explicar como executar os testes automatizados para este sistema.
-
-### 🔩 Analise os testes de ponta a ponta
-
-Explique que eles verificam esses testes e porquê.
-
-```
-Dar exemplos
-```
-
-### ⌨️ E testes de estilo de codificação
-
-Explique que eles verificam esses testes e porquê.
-
-```
-Dar exemplos
-```
+<p>Instalações dos pacotes descritos no <a href="/README.md">README.MD</a> do projeto.</p>
 
 ## 📦 Desenvolvimento
 
-Adicione notas adicionais sobre como implantar isso em um sistema ativo
+### Central de reembolso
+
+Nessa seção, há quatro cards dentro de um container e através destes o usuário tem acesso aos principais serviços e informações relacionados aos reembolsos cobertos pelo plano de saúde.
+</br>
+<img src="../documentation/assets/central-reembolso.png">
+
+### Resumo
+
+Nessa seção, em formato de texto em parágrafos, faz-se um resumo do que é o reembolso e qual é o procedimento adotado pelo SoulHealth para que o usuário usufrua dele.
+</br>
+<img src="../documentation/assets/resumo.png">
+
+### Dúvidas
+
+Nessa seção, o usuário tem as repostas às dúvidas mais frequentes relacionadas à reembolso. A seção foi desenvolvida em formato de menu acordeão que abre apenas a guia clicada, gerando uma visualização mais limpa.
+</br>
+<img src="../documentation/assets/duvidas.png">
 
 ## 🛠️ Construído com
 
-Mencione as ferramentas que você usou para criar seu projeto
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - O framework web usado
-* [Maven](https://maven.apache.org/) - Gerente de Dependência
-* [ROME](https://rometools.github.io/rome/) - Usada para gerar RSS
-
-## 🖇️ Colaborando
-
-Por favor, leia o [COLABORACAO.md](https://gist.github.com/usuario/linkParaInfoSobreContribuicoes) para obter detalhes sobre o nosso código de conduta e o processo para nos enviar pedidos de solicitação.
+- [Angular](https://angular.io/)
+- [Bootstrap](https://getbootstrap.com/docs/5.1/getting-started/introduction/)
+- [TypeScript](https://www.typescriptlang.org/)
 
 ## 📌 Versão
 
-Nós usamos [SemVer](http://semver.org/) para controle de versão. Para as versões disponíveis, observe as [tags neste repositório](https://github.com/suas/tags/do/projeto). 
+<p>Nós usamos o GitHub (https://github.com/) para controle de versão. </p>
 
 ## ✒️ Autores
 
-Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
-
-* **Um desenvolvedor** - *Trabalho Inicial* - [umdesenvolvedor](https://github.com/linkParaPerfil)
-* **Fulano De Tal** - *Documentação* - [fulanodetal](https://github.com/linkParaPerfil)
-
-Você também pode ver a lista de todos os [colaboradores](https://github.com/usuario/projeto/colaboradores) que participaram deste projeto.
-
-## 📄 Licença
-
-Este projeto está sob a licença (sua licença) - veja o arquivo [LICENSE.md](https://github.com/usuario/projeto/licenca) para detalhes.
+- **Bruno Gomes** - (https://github.com/BrunodevOliveira)
+- **Camila Silva** - (https://github.com/CamiMSilva)
+- **Jaqueline Rodrigues** - (https://github.com/agorasoudev)
+- **Lucélia Batista** - (https://github.com/Luceliabatista)
+- **Silas Sousa** - (https://github.com/SilasSousadeJesus)

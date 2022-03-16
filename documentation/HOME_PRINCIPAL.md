@@ -9,7 +9,7 @@ Essas instruções permitirão que você obtenha uma cópia do projeto em opera�
 
 ### 📋 Pré-requisitos
 
-Não há.
+<p>Não há.</p>
 
 ### 🔧 Instalação
 
@@ -56,7 +56,7 @@ Não há.
 
 ## 📌 Versão
 
-Nós usamos o GitHub (https://github.com/) para controle de versão.
+<p>Nós usamos o GitHub (https://github.com/) para controle de versão.</p>
 
 ## ✒️ Autores
 
