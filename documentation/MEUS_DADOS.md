@@ -1,7 +1,7 @@
-# Como acessar página meus dados
+# Como acessar página Meus Dados
 - Acesse a aplicação Soul Health
 - Clique em entrar e informe seus dados de usuário
-- Clique no botão `minha página` localizado no canto superior direito
+- Ou, se já estiver logado mas acessando outra página, clique no botão `minha página` localizado no canto superior direito
 - Em seguida acesse a aba Meus dados
 
   <div style="text-align: center;">
@@ -16,7 +16,7 @@
 ### 📋 Alterar dados
 - Ao clicar no botão **Alterar Dados**, será exibido um modal com os dados atuais do usuário
 - Esses dados estarão em um campo para edição onde ousuário poderá editá-los
-- Após a edição dos dados, basta clicar no botão **Atualizar** para que os novos dados sejam salvos ou em **cancelar** para permanecer som os atuais.
+- Após a edição dos dados, basta clicar no botão **Atualizar** para que os novos dados sejam salvos ou em **cancelar** para permanecer com os atuais.
   <div style="text-align: center;">
     <img src="./assets/meusDados-2.png">
   <div> 
@@ -31,7 +31,7 @@
     <br>
 
 ## 📦 Desenvolvimento
-Para realizar as ações descritas a cima foram desenvolvidos os seguintes códigos:
+Para realizar as ações descritas acima foram desenvolvidos os seguintes códigos:
 
 - Serviço beneficiary-service
   - Responsável pela comunicação entre o front end da aplicação e sua API.
