@@ -42,7 +42,7 @@ A SoulHealth, deseja fornecer ao contratante dos seus planos os seguintes acesso
 <br />
 
 > ## Link para o site 💻
-> https://soulheath-front.herokuapp.com
+> <a href="https://soulheath-front.herokuapp.com" target="_blank">SoulHeath</a>
 <br />
 
 ## 📄 Documentação do Projeto
